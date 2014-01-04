@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+    <object class="wxDialog" name="wxScopeServerDialog">
+        <title>wxScopeServer</title>
+        <size>243,474</size>
+        <object class="wxBoxSizer" variable="BoxSizer1" member="yes">
+            <orient>wxVERTICAL</orient>
+            <object class="sizeritem">
+                <object class="wxBoxSizer" variable="BoxSizer2" member="yes">
+                    <object class="sizeritem">
+                        <object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="yes">
+                            <label>Welcome to &#x0A;wxScopeServer</label>
+                            <font>
+                                <size>18</size>
+                                <style>normal</style>
+                                <weight>bold</weight>
+                                <underlined>0</underlined>
+                                <family>swiss</family>
+                                <face>Tahoma</face>
+                            </font>
+                        </object>
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>10</border>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxBoxSizer" variable="BoxSizer3" member="yes">
+                            <orient>wxVERTICAL</orient>
+                            <object class="sizeritem">
+                                <object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+                                    <label>About</label>
+                                    <handler function="OnAbout" entry="EVT_BUTTON" />
+                                </object>
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>4</border>
+                                <option>1</option>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxStaticLine" name="ID_STATICLINE1" variable="StaticLine1" member="yes">
+                                    <size>10,-1</size>
+                                </object>
+                                <flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>4</border>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxButton" name="ID_BUTTON2" variable="Button2" member="yes">
+                                    <label>Quit</label>
+                                    <handler function="OnQuit" entry="EVT_BUTTON" />
+                                </object>
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>4</border>
+                                <option>1</option>
+                            </object>
+                        </object>
+                        <flag>wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>4</border>
+                    </object>
+                </object>
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+            </object>
+            <object class="sizeritem">
+                <object class="wxBoxSizer" variable="BoxSizer4" member="yes">
+                    <object class="sizeritem">
+                        <object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="Tx_ServerLog" member="yes">
+                            <value>wxScopeServer Demo:&#x0A;</value>
+                            <style>wxTE_MULTILINE|wxTE_READONLY</style>
+                            <size>280,110</size>
+                        </object>
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                    </object>
+                </object>
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxBoxSizer" variable="BoxSizer5" member="yes">
+                    <object class="sizeritem">
+                        <object class="wxGridSizer" variable="STD_GridSizer" member="yes">
+                            <cols>3</cols>
+                            <rows>3</rows>
+                            <object class="spacer">
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxButton" name="ID_BUTTON5" subclass="wxPushButton" variable="m_de_plus" member="yes">
+                                    <label>DE+</label>
+                                    <size>32,32</size>
+                                    <handler function="OnDEplusClick" entry="EVT_BUTTON" />
+                                </object>
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                                <option>1</option>
+                            </object>
+                            <object class="spacer">
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>5</border>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxButton" name="ID_BUTTON4" subclass="wxPushButton" variable="m_ra_minus" member="yes">
+                                    <label>RA-</label>
+                                    <size>32,32</size>
+                                    <handler function="OnRAminusClick" entry="EVT_BUTTON" />
+                                </object>
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                            </object>
+                            <object class="spacer">
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxButton" name="ID_BUTTON3" subclass="wxPushButton" variable="m_ra_plus" member="yes">
+                                    <label>RA+</label>
+                                    <size>32,32</size>
+                                    <handler function="OnRAplusClick" entry="EVT_BUTTON" />
+                                </object>
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                            </object>
+                            <object class="spacer">
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxButton" name="ID_BUTTON6" subclass="wxPushButton" variable="m_de_minus" member="yes">
+                                    <label>DE-</label>
+                                    <size>32,32</size>
+                                    <handler function="OnDEminusClick" entry="EVT_BUTTON" />
+                                </object>
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                                <option>1</option>
+                            </object>
+                            <object class="spacer">
+                                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>1</border>
+                                <option>1</option>
+                            </object>
+                        </object>
+                        <flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>1</border>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <size>50,-1</size>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxCheckBox" name="ID_CHECKBOX1" variable="ParallelCheckBox" member="yes">
+                            <label>Parallel guiding</label>
+                            <handler function="OnParallelCheckBoxClick" entry="EVT_CHECKBOX" />
+                        </object>
+                        <flag>wxALL|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                </object>
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+            </object>
+        </object>
+    </object>
+</wxsmith>

@@ -1,0 +1,108 @@
+CA, 29. Sep 2008 - updated 09 April 2009
+
+How to build wxWidgets static libraries on Linux
+================================================
+
+A) Use build script
+
+   wxWebcamDB/setup/buildWxWidgets.sh
+
+   $ ./wxBuildScript.sh [D]   (just a D for debug)
+   Will build and install the whole stuff  - asks for a password due to sudo
+   install
+
+or 
+B) build manually
+
+1. Download from http://wxwidgets.org/downloads/ 
+   select wxGTK package, e.g. wxGTK-2.8.9.tar.gz
+   
+2. Extract download to new build directory
+   /home/ca/work/wxDev/components/ux/wxGTK-2.8.9
+   
+3. Make sure environment variable is set for compiler options
+   CXXFLAGS="-O2 -Os"
+   
+   can be done in either of
+   a) /etc/environment : for all users on the machine
+   b) .bashrc          : for current user only
+   
+4. Build debug version of wxWidgets
+   cd /home/ca/work/wxDev/components/ux/wxGTK-2.8.9  
+   mkdir buildgtkd
+   cd buildgtkd
+   ../configure --with-gtk --disable-shared --enable-unicode --with-libjpeg=no --with-libtiff=no --enable-debug
+   make
+   sudo make install
+   <password>
+   sudo ldconfig
+   
+5. Build release version of wxWidgets
+   Same as 4., but use buildgtkr and remove option: --enable-debug 
+   
+
+-- results in:
+
+Configured wxWidgets 2.8.8 for `x86_64-unknown-linux-gnu'
+
+  Which GUI toolkit should wxWidgets use?                 GTK+ 2
+  Should wxWidgets be compiled into single library?       no
+  Should wxWidgets be compiled in debug mode?             no
+  Should wxWidgets be linked as a shared library?         no
+  Should wxWidgets be compiled in Unicode mode?           yes
+  What level of wxWidgets compatibility should be enabled?
+                                       wxWidgets 2.4      no
+                                       wxWidgets 2.6      yes
+  Which libraries should wxWidgets use?
+                                       jpeg               no
+                                       png                sys
+                                       regex              builtin
+                                       tiff               no
+                                       zlib               sys
+                                       odbc               no
+                                       expat              sys
+                                       libmspack          no
+                                       sdl                no
+
+
+6. Check installed version (latest build=release should be default)
+   wx-config --list
+   
+7. Set up Code::Blocks to use static libraries built
+   Global variable 'wx' /usr/local (for Kubuntu repository version use /usr only )
+   set Build options UX_release: enable option -Os (Optimize generated code size)
+   Rebuild all
+   
+How to build wxWidgets static libraries on Windows
+==================================================
+
+1. Uninstall previous version of wxWidgets
+   Start | Programs | wxWidgets x.y.z | Uninstall
+
+2. Download from http://wxwidgets.org/downloads/ 
+   select wxMSW package, e.g. wxGTK-2.8.9-Setup.exe
+
+3. Install source to build directory (run setup.exe)
+   D:\wxWidgets_dev\components\wxWidgets-2.8.9
+   
+4. Open workspace in MS Visual C++ Express
+   Open D:\wxWidgets_dev\components\wxWidgets-2.8.9\build\msw\wx.dsw
+   Answer "yes to all" when asked if the file should be converted
+   Check that active project is wxregex
+
+5. Build debug version of wxWidgets
+   Build | Batch Build ...   
+      a) Press "Deselect all"
+	  b) Sort on "Solution config"
+	  c) Check each project of type "Debug\W32"
+	  d) Press "Build" button
+	  
+6. Build release version of wxWidgets
+   Build | Batch Build ...   
+      a) Press "Deselect all"
+	  b) Sort on "Solution config"
+	  c) Check each project of type "Release\W32"
+	  d) Press "Build" button
+	  
+7. Set up Code::Blocks to use static libraries built
+   Global variable 'wx'  D:\wxWidgets_dev\components\wxWidgets-2.8.9

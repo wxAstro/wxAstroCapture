@@ -1,0 +1,60 @@
+Von: Carsten A. Arnholm [arnholm@online.no]
+Gesendet: Montag, 8. September 2008 00:02
+An: Carsten A. Arnholm; bm98astro
+Betreff: Re: Executable size - this could work
+
+Here are some notes for optimizing executable size
+
+I edited /etc/environment file and added
+CXXFLAGS="-O2 -Os"
+(this was because ../configure --help mentions use of CXXFLAGS)
+
+NOTE TO SELF: /etc/environment defines PATH also
+
+I recompiled wxWidgets static library
+=====
+mkdir buildgtkd
+cd buildgtk
+../configure --with-gtk --with-gtk --disable-shared --enable-unicode 
+make 
+sudo make install <password> 
+sudo ldconfig 
+=========
+
+(add also "--enable-debug" for debug version)
+
+Code::Blocks
+=========
+Global variable 'wx'  /usr ==> /usr/local Build options UX_release: enable option -Os (Optimize generated code size) Rebuild all
+
+This generates an executable with size=4.6 MB !!
+then
+upx-nrv wxAstroCapture
+
+and the resulting executable is ......
+[DRUMS PLAYING HERE]
+..... 1.4MB !!!
+
+I think this is usable for static libs :-)
+
+This should make distribution to other distribution MUCH easier I think!
+
+---
+
+
+To make the release build work properly I built wxWidgets in this order 0. build from buildgtk subdir 1. config/make/install Debug version 2. Delete all files in buildgtk subdir 3. config/make/install release version
+
+This made the release version the default one, and debug the "alternate match". Since release is not explicitely mentioned in wx-config when building release version, it seems to be a requirement........?
+
+Code::Blocks: the 'wx' global variable must be /usr/local
+Code::Blocks: the -Os compiler option must be enabled for UX_Release
+
+Finally I added a post build step for UX_Release target (in build options) upx-nrv UX/bin/Release/wxAstroCapture
+
+The post-build step compresses the executable from 4.6 to 1.4MB. The post build step obviously means that the package 'upx-nrv' must be installed in Adept when building wxAstroCapture. As far as I understand it, the resulting compressed wxAstroCapture is an in-place, self-extracting binary which can be used exactly as the uncompressed one.
+
+The question is: Does this eliminate ALL external dependencies for wxAstroCapture  .deb file? It should eliminate wxWidgets, GTK+ and C/C++ runtimes I think? If so, it should run on essentially all Linux platforms without any install hassle?
+
+
+
+Carsten

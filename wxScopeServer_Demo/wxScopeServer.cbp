@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxScopeServer" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option show_notes="1">
+			<notes>
+				<![CDATA[Environment notes:
+Win: Microsoft Visual C++ 2005 Express Edition + PSDK  installed
+        wxWidgets 2.8.7  ANSI Library Build  installed
+
+Linux: gcc (GCC) 4.1.2
+        wxWidgets 2.8.7  UNICODE Dev library and headers installed
+
+/****************************************************************************
+* Project	wxScopeServer Demo Project
+ *
+ * author     C.A. Arnholm / M. Burri
+ * date       05-Dec-2007
+ * Copyright	2007 - C.A. Arnholm / M. Burri
+ * rev:		1.0
+ *
+ * This is copyrighted material - NOT freeware NOR GPL NOR anything else !!!!!
+ *****************************************************************************
+ * Updates
+ *
+ *****************************************************************************
+ * License:
+ * You are allowed to use the files included in the wxScopeServer Project for
+ * any NON commercial (NON shareware etc.) purposes only.
+ * If you want to use it for any other purpose you have to obtain a proper license
+ * - just call <ca _at_ arnholm _dot_ org>
+ * - or call <bm98 _at_ burri-web _dot_ org>
+ *
+ * You may distribute the files included in the wxScopeServer Demo project included
+ * in projects that you have made yourself providing the above paragraph is respected
+ * and the copyright and limited warranty is left included in the source files.
+ * Please make sure using an appropriate installer to maintain your customers
+ * PC in a healthy condition - thanks
+ *
+ * No warranties whatsoever
+ * LIMITED WARRANTY AND DISCLAIMER OF WARRANTY
+ * THE Copyright Holder EXPRESSLY DISCLAIMS ANY WARRANTY FOR THE SOFTWARE. THIS SOFTWARE
+ * AND THE ACCOMPANYING FILES ARE GIVEN FOR FREE "AS IS" AND WITHOUT WARRANTIES AS TO
+ * PERFORMANCE OF MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR
+ * IMPLIED, OR NONINFRINGEMENT.
+ * THIS SOFTWARE IS NOT FAULT TOLERANT AND SHOULD NOT BE USED IN ANY ENVIRONMENT
+ * WHICH REQUIRES THIS.
+ * The Licensed Software is provided AS IS without warranty of any kind. The Copyright Holder
+ * makes no further representations or warranties expressly or implied such as by way
+ * of example but not of limitation regarding merchant ability or fitness for
+ * any particular purpose, or that Licensed Software is error free, or that the use
+ * of the Licensed Software or any copies thereof will not infringe any patent,
+ * copyright or trademark of third parties.
+ * NO LIABILITY FOR DAMAGES. In no event shall the Copyright Holder or agents or its
+ * suppliers be liable to you for any consequential, incidental or indirect damages
+ * whatsoever (including, without limitation, damages for loss of business profits,
+ * business interruption, loss of business information, or any other pecuniary loss)
+ * arising out of the use of or inability to use this SOFTWARE EVEN IF the
+ * Copyright Holder HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+ * The entire risk arising out of use or performance of the SOFTWARE remains with you.
+ * Because of the various hardware and software environments into which this software
+ * may be put, NO WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE IS OFFERED.
+ * The liability of the Copyright Holder for actual damages from any cause whatsoever,
+ * and regardless of the form of action (whether in contract, tort (including negligence),
+ * product liability or otherwise) WILL BE LIMITED TO ZERO, NOTHING, NIENTE, NADA, NICHTS.
+ ******************************************************************************/
+]]>
+			</notes>
+		</Option>
+		<Build>
+			<Target title="W32_Debug">
+				<Option output="W32/bin/Debug/wxScopeServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="W32/obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="/MDd" />
+					<Add option="/Gd" />
+					<Add option="/RTC1" />
+					<Add option="/Gm" />
+					<Add option="/EHs" />
+					<Add option="/GS" />
+					<Add option="/Od" />
+					<Add option="/W4" />
+					<Add option="/Zi /D_DEBUG" />
+					<Add option="/EHsc" />
+					<Add option='/Fd&quot;W32\bin\Debug\wxScopeServer.pdb&quot;' />
+					<Add option="/FD" />
+					<Add option="/RTCsu" />
+					<Add option="/Zc:wchar_t-" />
+					<Add option="/DWIN32" />
+					<Add option="/D__WIN32__" />
+					<Add option="/D_WXMSW_" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D__WXDEBUG__" />
+					<Add option="/D_BM" />
+					<Add directory="$(#VC2005.include)" />
+					<Add directory="$(#PSDK.include)" />
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.lib)/vc_lib/mswd" />
+					<Add directory="$(#DScap.include)" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.include)/msvc" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/DEBUG" />
+					<Add option="/NODEFAULTLIB:libcmtd.lib" />
+					<Add option="/NODEFAULTLIB:msvcrt.lib" />
+					<Add library="msvcrtd.lib" />
+					<Add library="wxmsw28d_core.lib" />
+					<Add library="wxbase28d.lib" />
+					<Add library="wxbase28d_net.lib" />
+					<Add library="wxbase28d_odbc.lib" />
+					<Add library="wxbase28d_xml.lib" />
+					<Add library="wxtiffd.lib" />
+					<Add library="wxjpegd.lib" />
+					<Add library="wxpngd.lib" />
+					<Add library="wxzlibd.lib" />
+					<Add library="wxregexd.lib" />
+					<Add library="wxexpatd.lib" />
+					<Add library="wxmsw28d_adv.lib" />
+					<Add library="wxmsw28d_aui.lib" />
+					<Add library="wxmsw28d_dbgrid.lib" />
+					<Add library="wxmsw28d_gl.lib" />
+					<Add library="wxmsw28d_html.lib" />
+					<Add library="wxmsw28d_media.lib" />
+					<Add library="wxmsw28d_qa.lib" />
+					<Add library="wxmsw28d_richtext.lib" />
+					<Add library="wxmsw28d_xrc.lib" />
+					<Add library="winmm.lib" />
+					<Add library="rpcrt4.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="wsock32.lib" />
+					<Add library="odbc32.lib" />
+					<Add directory="$(#VC2005.lib)" />
+					<Add directory="$(#PSDK.lib)" />
+					<Add directory="$(#WX.lib)/vc_lib" />
+					<Add directory="$(#DScap.lib)" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='mt.exe /nologo /manifest &quot;W32\bin\Debug\wxScopeServer.exe.manifest&quot; /outputresource:&quot;W32\bin\Debug\wxScopeServer.exe&quot;;#1' />
+				</ExtraCommands>
+			</Target>
+			<Target title="W32_Release">
+				<Option output="W32/bin/Release/wxScopeServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="W32/obj/Release/" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Option projectCompilerOptionsRelation="2" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="/MD" />
+					<Add option="/EHs" />
+					<Add option="/O2" />
+					<Add option="/Ox" />
+					<Add option="/W3" />
+					<Add option="/Ob1" />
+					<Add option='/Fd&quot;W32\bin\Release\wxScopeServer.pdb&quot;' />
+					<Add option="/Zc:wchar_t-" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/D__WIN32__" />
+					<Add option="/D_WXMSW_" />
+					<Add option="/D_WINDOWS" />
+					<Add directory="$(#VC2005.include)" />
+					<Add directory="$(#PSDK.include)" />
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.lib)/vc_lib/msw" />
+					<Add directory="$(#DScap.include)" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.lib)/vc_lib/msw" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/NODEFAULTLIB:libcmt.lib" />
+					<Add option="/NODEFAULTLIB:msvcrtd.lib" />
+					<Add library="msvcrt.lib" />
+					<Add library="wxmsw28_core.lib" />
+					<Add library="wxbase28.lib" />
+					<Add library="wxbase28_net.lib" />
+					<Add library="wxbase28_odbc.lib" />
+					<Add library="wxbase28_xml.lib" />
+					<Add library="wxtiff.lib" />
+					<Add library="wxjpeg.lib" />
+					<Add library="wxpng.lib" />
+					<Add library="wxzlib.lib" />
+					<Add library="wxregex.lib" />
+					<Add library="wxexpat.lib" />
+					<Add library="wxmsw28_adv.lib" />
+					<Add library="wxmsw28_aui.lib" />
+					<Add library="wxmsw28_dbgrid.lib" />
+					<Add library="wxmsw28_gl.lib" />
+					<Add library="wxmsw28_html.lib" />
+					<Add library="wxmsw28_media.lib" />
+					<Add library="wxmsw28_qa.lib" />
+					<Add library="wxmsw28_richtext.lib" />
+					<Add library="wxmsw28_xrc.lib" />
+					<Add library="winmm.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="rpcrt4.lib" />
+					<Add library="wsock32.lib" />
+					<Add library="oleacc.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add directory="$(#VC2005.lib)" />
+					<Add directory="$(#PSDK.lib)" />
+					<Add directory="$(#WX.lib)" />
+					<Add directory="$(#WX.lib)/vc_lib" />
+					<Add directory="$(#DScap.lib)" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='mt.exe /nologo /manifest &quot;W32\bin\Release\wxScopeServer.exe.manifest&quot; /outputresource:&quot;W32\bin\Release\wxScopeServer.exe&quot;;1' />
+				</ExtraCommands>
+			</Target>
+			<Target title="UX_Debug">
+				<Option output="UX/bin/Debug/wxScopeServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="UX/obj/Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="`wx-config --version=2.8 --toolkit=gtk2 --debug --cxxflags`" />
+					<Add option="-DNOPCH" />
+					<Add option="-D__WXDEBUG__" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config  --version=2.8 --toolkit=gtk2 --debug --libs`" />
+				</Linker>
+			</Target>
+			<Target title="UX_Release">
+				<Option output="UX/bin/Release/wxScopeServer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="UX/obj/Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="`wx-config --version=2.8 --toolkit=gtk2 --cxxflags`" />
+					<Add option="-DNOPCH" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config  --version=2.8 --toolkit=gtk2 --libs`" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="pics/buttons_16x16.xpm" />
+		<Unit filename="pics/buttons_64x64.xpm" />
+		<Unit filename="pics/de_minus_down.xpm" />
+		<Unit filename="pics/de_minus_up.xpm" />
+		<Unit filename="pics/de_plus_down.xpm" />
+		<Unit filename="pics/de_plus_up.xpm" />
+		<Unit filename="pics/ra_minus_down.xpm" />
+		<Unit filename="pics/ra_minus_up.xpm" />
+		<Unit filename="pics/ra_plus_down.xpm" />
+		<Unit filename="pics/ra_plus_up.xpm" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="wxPushButton.cpp" />
+		<Unit filename="wxPushButton.h" />
+		<Unit filename="wxScopeServerApp.cpp" />
+		<Unit filename="wxScopeServerApp.h" />
+		<Unit filename="wxScopeServerMain.cpp" />
+		<Unit filename="wxScopeServerMain.h" />
+		<Unit filename="wxScopeSvr.cpp" />
+		<Unit filename="wxScopeSvr.h" />
+		<Unit filename="wxsmith/wxscopeserverdialog.wxs" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxScopeServerApp.cpp" main="wxScopeServerDialog" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxDialog wxs="wxsmith/wxscopeserverdialog.wxs" src="wxScopeServerMain.cpp" hdr="wxScopeServerMain.h" name="wxScopeServerDialog" language="CPP" />
+				</resources>
+			</wxsmith>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

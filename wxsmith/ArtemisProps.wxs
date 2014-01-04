@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="ArtemisProps">
+		<object class="wxBoxSizer" variable="BoxSizer1" member="no">
+			<orient>wxVERTICAL</orient>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer2" member="no">
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="no">
+							<label>Black</label>
+							<size>35,-1</size>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>2</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSpinCtrl" name="ID_SPINCTRL_BLACK" variable="SpinCtrl_black" member="yes">
+							<value>0</value>
+							<max>65535</max>
+							<size>70,-1</size>
+							<handler function="OnSpinCtrl_blackChange" entry="EVT_SPINCTRL" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSlider" name="ID_SLIDER_BLACK" variable="Slider_black" member="yes">
+							<max>32767</max>
+							<size>110,20</size>
+							<handler function="OnSlider_blackCmdScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>2</option>
+					</object>
+				</object>
+				<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>2</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="no">
+							<label>White</label>
+							<size>35,-1</size>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>2</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSpinCtrl" name="ID_SPINCTRL_WHITE" variable="SpinCtrl_white" member="yes">
+							<value>65535</value>
+							<max>65535</max>
+							<size>70,-1</size>
+							<handler function="OnSpinCtrl_whiteChange1" entry="EVT_SPINCTRL" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSlider" name="ID_SLIDER_WHITE" variable="Slider_white" member="yes">
+							<value>32767</value>
+							<max>32767</max>
+							<size>110,20</size>
+							<handler function="OnSlider_whiteCmdScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>2</option>
+					</object>
+				</object>
+				<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>2</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="no">
+							<label>Gamma</label>
+							<size>35,-1</size>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>2</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSpinCtrl" name="ID_SPINCTRL_GAMMA" subclass="wxSpinCtrlDbl" variable="SpinCtrl_gamma" member="yes">
+							<value>0.0</value>
+							<min>-10</min>
+							<max>10</max>
+							<size>70,-1</size>
+							<handler function="OnSpinCtrl_gammaChange" entry="EVT_SPINCTRL" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSlider" name="ID_SLIDER_GAMMA" variable="Slider_gamma" member="yes">
+							<value>100</value>
+							<max>200</max>
+							<size>110,20</size>
+							<handler function="OnSlider_gammaCmdScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>2</option>
+					</object>
+				</object>
+				<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>2</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer6" member="no">
+					<object class="sizeritem">
+						<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="no">
+							<label>GLog</label>
+							<size>35,-1</size>
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>2</border>
+						<option>1</option>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSpinCtrl" name="ID_SPINCTRL_GLOG" subclass="wxSpinCtrlDbl" variable="SpinCtrl_glog" member="yes">
+							<value>1</value>
+							<max>10</max>
+							<size>70,-1</size>
+							<handler function="OnSpinCtrl_glogChange" entry="EVT_SPINCTRL" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxSlider" name="ID_SLIDER_GLOG" variable="Slider_glog" member="yes">
+							<value>10</value>
+							<size>110,20</size>
+							<handler function="OnSlider_glogCmdScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+						</object>
+						<flag>wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+						<option>2</option>
+					</object>
+				</object>
+				<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+				<border>2</border>
+				<option>1</option>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer5" member="no">
+					<object class="sizeritem">
+						<object class="wxCheckBox" name="ID_CHECKBOX1" variable="CheckBox_AutoStretch" member="yes">
+							<label>Auto histo. stretch</label>
+							<handler function="OnCheckBox_AutoStretchClick" entry="EVT_CHECKBOX" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+					<object class="sizeritem">
+						<object class="wxButton" name="ID_BUTTON_RESET_GAMMA" variable="ResetGamma_Button" member="yes">
+							<label>Reset Gamma</label>
+							<handler function="OnResetGamma_ButtonClick" entry="EVT_BUTTON" />
+						</object>
+						<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<border>5</border>
+					</object>
+				</object>
+				<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>2</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>

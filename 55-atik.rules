@@ -1,0 +1,63 @@
+# Udev rules file for ATIK  products.
+#
+# belongs into  /etc/udev/rules.d  directory  (copy with sudo )
+#
+# V1.1 - 20090409/BM
+#
+
+ACTION!="add", GOTO="atik_rules_end"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GOTO="atik_pid_test"
+SUBSYSTEM!="usb_device", GOTO="atik_rules_end"
+
+LABEL="atik_pid_test"
+
+# allow USB access permission via GROUP setting of those devices
+# create a symbolic link for easier enumeration in the user prog
+
+# FTDI245 based cams
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df28", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_art"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df34", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_mini"
+
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df2c", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16ics"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df2d", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16ics_c"
+
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df30", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df31", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16hr"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df32", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16_c"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df33", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16hr_c"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df35", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16ic"
+SYSFS{idVendor}=="0403", SYSFS{idProduct}=="df36", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_16ic_c"
+
+# Cypress EzFx2 based cams
+# SYSFS{idVendor}=="04b4", SYSFS{idProduct}=="8613", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_art"
+SYSFS{idVendor}=="04b4", SYSFS{idProduct}=="df28", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="atik_art4021"
+
+LABEL="atik_rules_end"
+
+
+ACTION!="add", GOTO="atik_ftdi_rules_end"
+SUBSYSTEMS=="usb-serial", DRIVERS=="ftdi_sio", GOTO="atik_ftdi_pid_test"
+DRIVER!="ftdi_sio", GOTO="atik_ftdi_rules_end"
+
+LABEL="atik_ftdi_pid_test"
+
+# allow ttyUSBn access permission via GROUP setting of those devices
+# and provide a new name for the device - so it is not found as ttyUSBn
+# note the name is like the symlink for the USB device above but extended with S (SIO)
+
+# FTDI245 based cams
+ATTRS{modalias}=="usb:v0403pDF28*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_artS"
+ATTRS{modalias}=="usb:v0403pDF34*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_miniS"
+
+ATTRS{modalias}=="usb:v0403pDF2C*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16icsS"
+ATTRS{modalias}=="usb:v0403pDF2D*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16ics_cS"
+
+ATTRS{modalias}=="usb:v0403pDF30*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16S"
+ATTRS{modalias}=="usb:v0403pDF31*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16hrS"
+ATTRS{modalias}=="usb:v0403pDF32*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16_cS"
+ATTRS{modalias}=="usb:v0403pDF33*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16hr_cS"
+ATTRS{modalias}=="usb:v0403pDF35*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16icS"
+ATTRS{modalias}=="usb:v0403pDF36*", OWNER="root", GROUP="video", MODE="0660", NAME="atik_16ic_cS"
+
+LABEL="atik_ftdi_rules_end"
+

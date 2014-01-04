@@ -1,0 +1,3 @@
+aaaa ICON "pics/wxScopeServer.ico"
+
+#include "wx/msw/wx.rc"

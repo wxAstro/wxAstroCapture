@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxPanel" name="FitsHeader">
+		<size>400,400</size>
+		<maxsize>-1,400</maxsize>
+		<object class="wxBoxSizer" variable="BoxSizer1" member="yes">
+			<object class="sizeritem">
+				<object class="wxGrid" name="ID_GRID1" subclass="wxPropGrid" variable="grid" member="yes">
+					<style>wxSIMPLE_BORDER</style>
+					<size>500,300</size>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+				<border>5</border>
+				<option>1</option>
+			</object>
+		</object>
+	</object>
+</wxsmith>

@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="wxWebcamDB" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="wxGUI\;wxGUI\VideoProperties\;wxGUI\SettingsDialog\;wxGUI\ImageHeaderDialog\;wxCamera\;wxCamera\Webcam\;wxCamera\Artemis\;wxCamera\FITS-IO\;wxCamera\AVI-IO\;wxCamera\Webcam\UX\;wxCamera\Webcam\WIN\;wxGuiding\;wxGUI\GuidingDialog\;wxIO\;wxIO\UX\;wxIO\WIN\;wxCamera\Artemis\Driver\;wxCamera\Artemis\Driver\UX\;wxCamera\Artemis\Driver\WIN\;wxIO\Guiding\;wxCamera\Artemis\Driver\SIM\;wxGUI\Misc\;wxGUI\Batch\;wxGUI\GuidingDialog_OLD\;" />
+		<Build>
+			<Target title="W32_Debug">
+				<Option output="W32\bin\Debug\wxAstroCapture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="W32\obj\Debug\" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="/MDd" />
+					<Add option="/Gd" />
+					<Add option="/RTC1" />
+					<Add option="/Gm" />
+					<Add option="/EHs" />
+					<Add option="/GS" />
+					<Add option="/Od" />
+					<Add option="/W4" />
+					<Add option="/Zi" />
+					<Add option="/Zi /D_DEBUG" />
+					<Add option="/EHsc" />
+					<Add option='/Fd&quot;W32\bin\Debug\wxWebcamDB.pdb&quot;' />
+					<Add option="/RTCsu" />
+					<Add option="/Zc:wchar_t-" />
+					<Add option="/MP4" />
+					<Add option="/DWIN32" />
+					<Add option="/D__WIN32__" />
+					<Add option="/D_WXMSW_" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D__WXDEBUG__" />
+					<Add option="/D_BM" />
+					<Add option="/D_CRT_SECURE_NO_WARNINGS" />
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.lib)\vc_lib\mswd" />
+					<Add directory="$(#DScap.include)" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.include)\msvc" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/DEBUG" />
+					<Add option="/NODEFAULTLIB:libcmtd.lib" />
+					<Add option="/NODEFAULTLIB:msvcrt.lib" />
+					<Add option="/MACHINE:X86" />
+					<Add library="msvcrtd.lib" />
+					<Add library="wxmsw28d_core.lib" />
+					<Add library="wxbase28d.lib" />
+					<Add library="wxbase28d_net.lib" />
+					<Add library="wxbase28d_odbc.lib" />
+					<Add library="wxbase28d_xml.lib" />
+					<Add library="wxtiffd.lib" />
+					<Add library="wxjpegd.lib" />
+					<Add library="wxpngd.lib" />
+					<Add library="wxzlibd.lib" />
+					<Add library="wxregexd.lib" />
+					<Add library="wxexpatd.lib" />
+					<Add library="wxmsw28d_adv.lib" />
+					<Add library="wxmsw28d_aui.lib" />
+					<Add library="wxmsw28d_dbgrid.lib" />
+					<Add library="wxmsw28d_gl.lib" />
+					<Add library="wxmsw28d_html.lib" />
+					<Add library="wxmsw28d_media.lib" />
+					<Add library="wxmsw28d_qa.lib" />
+					<Add library="wxmsw28d_richtext.lib" />
+					<Add library="wxmsw28d_xrc.lib" />
+					<Add library="winmm.lib" />
+					<Add library="rpcrt4.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="wsock32.lib" />
+					<Add library="odbc32.lib" />
+					<Add directory="$(#WX.lib)\vc_lib" />
+					<Add directory="$(#DScap.lib)" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='mt.exe /nologo /manifest &quot;W32\bin\Debug\wxAstroCapture.exe.manifest&quot; /outputresource:&quot;W32\bin\Debug\wxAstroCapture.exe&quot;;#1' />
+				</ExtraCommands>
+			</Target>
+			<Target title="W32_Release">
+				<Option output="W32\bin\Release\wxAstroCapture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="W32\obj\Release\" />
+				<Option type="0" />
+				<Option compiler="msvc8" />
+				<Option projectCompilerOptionsRelation="2" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="/MD" />
+					<Add option="/EHs" />
+					<Add option="/O2" />
+					<Add option="/Ox" />
+					<Add option="/W3" />
+					<Add option="/Ob1" />
+					<Add option='/Fd&quot;W32\bin\Release\wxWebcamDB.pdb&quot;' />
+					<Add option="/Zc:wchar_t-" />
+					<Add option="/MP4" />
+					<Add option="/DNDEBUG" />
+					<Add option="/DWIN32" />
+					<Add option="/D__WIN32__" />
+					<Add option="/D_WXMSW_" />
+					<Add option="/D_WINDOWS" />
+					<Add option="/D_CRT_SECURE_NO_WARNINGS" />
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.lib)\vc_lib\msw" />
+					<Add directory="$(#DScap.include)" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#WX.include)" />
+					<Add directory="$(#WX.lib)\vc_lib\msw" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="/NODEFAULTLIB:libcmt.lib" />
+					<Add option="/NODEFAULTLIB:msvcrtd.lib" />
+					<Add option="/MACHINE:X86" />
+					<Add library="msvcrt.lib" />
+					<Add library="wxmsw28_core.lib" />
+					<Add library="wxbase28.lib" />
+					<Add library="wxbase28_net.lib" />
+					<Add library="wxbase28_odbc.lib" />
+					<Add library="wxbase28_xml.lib" />
+					<Add library="wxtiff.lib" />
+					<Add library="wxjpeg.lib" />
+					<Add library="wxpng.lib" />
+					<Add library="wxzlib.lib" />
+					<Add library="wxregex.lib" />
+					<Add library="wxexpat.lib" />
+					<Add library="wxmsw28_adv.lib" />
+					<Add library="wxmsw28_aui.lib" />
+					<Add library="wxmsw28_dbgrid.lib" />
+					<Add library="wxmsw28_gl.lib" />
+					<Add library="wxmsw28_html.lib" />
+					<Add library="wxmsw28_media.lib" />
+					<Add library="wxmsw28_qa.lib" />
+					<Add library="wxmsw28_richtext.lib" />
+					<Add library="wxmsw28_xrc.lib" />
+					<Add library="winmm.lib" />
+					<Add library="comctl32.lib" />
+					<Add library="rpcrt4.lib" />
+					<Add library="wsock32.lib" />
+					<Add library="oleacc.lib" />
+					<Add library="odbc32.lib" />
+					<Add library="kernel32.lib" />
+					<Add library="user32.lib" />
+					<Add library="gdi32.lib" />
+					<Add library="winspool.lib" />
+					<Add library="comdlg32.lib" />
+					<Add library="advapi32.lib" />
+					<Add library="shell32.lib" />
+					<Add library="ole32.lib" />
+					<Add library="oleaut32.lib" />
+					<Add library="uuid.lib" />
+					<Add directory="$(#WX.lib)" />
+					<Add directory="$(#WX.lib)\vc_lib" />
+					<Add directory="$(#DScap.lib)" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='mt.exe /nologo /manifest &quot;W32\bin\Release\wxAstroCapture.exe.manifest&quot; /outputresource:&quot;W32\bin\Release\wxAstroCapture.exe&quot;;1' />
+				</ExtraCommands>
+			</Target>
+			<Target title="UX_Debug">
+				<Option output="UX\bin\Debug\wxAstroCapture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="UX\obj\Debug" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="`wx-config --version=2.8 --toolkit=gtk2 --debug --cxxflags`" />
+					<Add option="-Wno-ignored-qualifiers" />
+					<Add option="-DNOPCH" />
+					<Add option="-D__WXDEBUG__" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D__WX__" />
+				</Compiler>
+				<Linker>
+					<Add option="`wx-config  --version=2.8 --toolkit=gtk2 --debug --libs`" />
+					<Add library="usb" />
+				</Linker>
+			</Target>
+			<Target title="UX_Release">
+				<Option output="UX\bin\Release\wxAstroCapture" prefix_auto="1" extension_auto="1" />
+				<Option object_output="UX\obj\Release" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Os" />
+					<Add option="-O2" />
+					<Add option="-W" />
+					<Add option="`wx-config --version=2.8 --toolkit=gtk2 --cxxflags`" />
+					<Add option="-Wno-ignored-qualifiers" />
+					<Add option="-DNOPCH" />
+					<Add option="-D__WX__" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="`wx-config  --version=2.8 --toolkit=gtk2 --libs`" />
+					<Add library="usb" />
+				</Linker>
+				<ExtraCommands>
+					<Add after="upx-nrv UX/bin/Release/wxAstroCapture" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Unit filename="AdvancedGuidingParams.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="AdvancedGuidingParams.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="ArtemisCooling.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="ArtemisCooling.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="ArtemisProps.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="ArtemisProps.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="BatchExposure.cpp">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchExposure.h">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchJob.cpp">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchJob.h">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchJobManager.cpp">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchJobManager.h">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchSetup.cpp">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="BatchSetup.h">
+			<Option virtualFolder="wxGUI\Batch\" />
+		</Unit>
+		<Unit filename="DefaultProps.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="DefaultProps.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="FitsHeader.cpp">
+			<Option virtualFolder="wxGUI\ImageHeaderDialog\" />
+		</Unit>
+		<Unit filename="FitsHeader.h">
+			<Option virtualFolder="wxGUI\ImageHeaderDialog\" />
+		</Unit>
+		<Unit filename="GenericDebHelp.cpp" />
+		<Unit filename="GenericDebHelp.h" />
+		<Unit filename="ImageHeaderDialog.cpp">
+			<Option virtualFolder="wxGUI\ImageHeaderDialog\" />
+		</Unit>
+		<Unit filename="ImageHeaderDialog.h">
+			<Option virtualFolder="wxGUI\ImageHeaderDialog\" />
+		</Unit>
+		<Unit filename="LoadSaveProps.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="LoadSaveProps.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="OptionsGuiding.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="OptionsGuiding.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="PrimaryProps.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="PrimaryProps.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="SecondaryProps.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="SecondaryProps.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="SettingsControlPort.cpp">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsControlPort.h">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsDialog.cpp">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsDialog.h">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsGuidePort.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidePort.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidePortParallel.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidePortParallel.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidePortSerial.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidePortSerial.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuiding.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="SettingsGuiding.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="SettingsGuidingCalibrateDlg.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="SettingsGuidingCalibrateDlg.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterface.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterface.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterfaceBridge.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterfaceBridge.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterfaceFile.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterfaceFile.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterfacePort.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsGuidingInterfacePort.h">
+			<Option virtualFolder="wxGUI\GuidingDialog_OLD\" />
+		</Unit>
+		<Unit filename="SettingsNamePolicy.cpp">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsNamePolicy.h">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsVideoCapture.cpp">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="SettingsVideoCapture.h">
+			<Option virtualFolder="wxGUI\SettingsDialog\" />
+		</Unit>
+		<Unit filename="debtools.h" />
+		<Unit filename="doc\html\notes.html" />
+		<Unit filename="version.h" />
+		<Unit filename="w32res\resource.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="w32res\wxwebcam.ico">
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxConfigPath.cpp">
+			<Option virtualFolder="wxGUI\Misc\" />
+		</Unit>
+		<Unit filename="wxConfigPath.h">
+			<Option virtualFolder="wxGUI\Misc\" />
+		</Unit>
+		<Unit filename="wxFactory.cpp">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxFactory.h">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxGuider.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuider.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuiderBridgeInterface.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuiderBridgeInterface.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuiderFileInterface.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuiderFileInterface.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuiderPortInterface.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuiderPortInterface.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuidingConfig.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuidingConfig.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceBridge.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceBridge.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceFile.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceFile.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceParallelPort.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceParallelPort.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceSerialPort.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceSerialPort.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceUsbPort.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingInterfaceUsbPort.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingOptions.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxGuidingOptions.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxIO\GPUsb.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\GPUsb.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\GPUsbUX.cpp">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\GPUsbUX.h">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\GPUsbW32.cpp">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\GPUsbW32.h">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\GP_BRIDGE.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_BRIDGE.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_LX200.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_LX200.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_LX200PG.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_LX200PG.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_MTS_3SDI.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_MTS_3SDI.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_NexStar.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_NexStar.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_ST4.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\GP_ST4.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\IOBuffer.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\IOBuffer.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\LXUsb.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\LXUsb.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\LXUsbUX.cpp">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\LXUsbUX.h">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\LXUsbW32.cpp">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\LXUsbW32.h">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\MTS3_PF.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\MTS3_PF.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\PortEnumUX.cpp">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\PortEnumUX.h">
+			<Option virtualFolder="wxIO\UX\" />
+		</Unit>
+		<Unit filename="wxIO\PortEnumW32.cpp">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\PortEnumW32.h">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\PortTalk_IOCTL.h">
+			<Option virtualFolder="wxIO\WIN\" />
+		</Unit>
+		<Unit filename="wxIO\PortUX.cpp">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\PortUX.h">
+			<Option virtualFolder="wxIO\UX\" />
+		</Unit>
+		<Unit filename="wxIO\PortW32.cpp">
+			<Option virtualFolder="wxIO\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxIO\PortW32.h">
+			<Option virtualFolder="wxIO\WIN\" />
+		</Unit>
+		<Unit filename="wxIO\SAUSB_LibUsb.cpp">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\SAUSB_LibUsb.h">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\ShoestringVidPid.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\UxUsb_LibUsb.cpp">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\UxUsb_LibUsb.h">
+			<Option virtualFolder="wxIO\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxIO\wxGuiderPort.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\wxGuiderPort.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\wxGuiderPortProtocol.cpp">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\wxGuiderPortProtocol.h">
+			<Option virtualFolder="wxIO\Guiding\" />
+		</Unit>
+		<Unit filename="wxIO\wxLongExpoPort.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxLongExpoPort.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxPort.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxPort.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxPortDescr.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxPortDescr.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxPortManager.cpp">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxIO\wxPortManager.h">
+			<Option virtualFolder="wxIO\" />
+		</Unit>
+		<Unit filename="wxMainToolBar.cpp">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxMainToolBar.h">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxMessageArea.cpp">
+			<Option virtualFolder="wxGUI\Misc\" />
+		</Unit>
+		<Unit filename="wxMessageArea.h">
+			<Option virtualFolder="wxGUI\Misc\" />
+		</Unit>
+		<Unit filename="wxNamePolicy.cpp">
+			<Option virtualFolder="wxGUI\Misc\" />
+		</Unit>
+		<Unit filename="wxNamePolicy.h">
+			<Option virtualFolder="wxGUI\Misc\" />
+		</Unit>
+		<Unit filename="wxNoteBookPageEx.cpp">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxNoteBookPageEx.h">
+			<Option virtualFolder="wxGUI\GuidingDialog\" />
+		</Unit>
+		<Unit filename="wxStar.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxStar.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxSubFrame.cpp">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxSubFrame.h">
+			<Option virtualFolder="wxGuiding\" />
+		</Unit>
+		<Unit filename="wxWebcamDBApp.cpp">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxWebcamDBApp.h">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxWebcamDBMain.cpp">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxWebcamDBMain.h">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxWebcamProps.cpp">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="wxWebcamProps.h">
+			<Option virtualFolder="wxGUI\VideoProperties\" />
+		</Unit>
+		<Unit filename="wxWebcam\ARTUSB_LibUsb.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ARTUSB_LibUsb.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtBase.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtBase.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDevice.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDevice.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrv.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrvHscW32DLL.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrvHscW32DLL.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrvSim.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\SIM\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrvSim.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\SIM\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrvW32DLL.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtDrvW32DLL.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtTimeHelper.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtTimeHelper.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtTypes.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtVidPid.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtemisCCDAPI.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtemisCCDAPI.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtemisHSCAPI.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\ArtemisHSCAPI.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16Cmd.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16Cmd.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16Drv.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16Drv.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16Thread.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16Thread.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Atik16ThreadCB.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Ftd245IO.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Ftd245IO.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Ftd245IOUX.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Ftd245IOUX.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Ftd245Lib.cpp">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\Ftd245Lib.h">
+			<Option virtualFolder="wxCamera\Artemis\Driver\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\GenericFps.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\GenericFps.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\GenericImageMem.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\GenericImageMem.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\AsyncWrite.cpp">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\AsyncWrite.h">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\avilib.cpp">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\avilib.h">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\avilib_buf.cpp">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\byteswap.h">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\inttypes.h">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\avi\riff.h">
+			<Option virtualFolder="wxCamera\AVI-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\capturebase.cpp">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\capturebase.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\captypes.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\dscapture.cpp">
+			<Option virtualFolder="wxCamera\Webcam\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\dscapture.h">
+			<Option virtualFolder="wxCamera\Webcam\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\fits\wxFitsKeyword.cpp">
+			<Option virtualFolder="wxCamera\FITS-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\fits\wxFitsKeyword.h">
+			<Option virtualFolder="wxCamera\FITS-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\fits\wxFitsOut.cpp">
+			<Option virtualFolder="wxCamera\FITS-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\fits\wxFitsOut.h">
+			<Option virtualFolder="wxCamera\FITS-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\fits\wxFitsOutputStream.cpp">
+			<Option virtualFolder="wxCamera\FITS-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\fits\wxFitsOutputStream.h">
+			<Option virtualFolder="wxCamera\FITS-IO\" />
+		</Unit>
+		<Unit filename="wxWebcam\iv4l2wcfCtrl.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\pwc-ioctl.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\uxcapture.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\uxcapture.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2capfilter.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2capfilter.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2stream.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2stream.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2wcfilter.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2wcfilter.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2wcprop.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\v4l2wcprop.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtCoords.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtCoords.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtSample.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtSample.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtcam.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtcam.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtcamTimer.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtcamTimer.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxArtcamTimerCB.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxBMP2Fits.cpp">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxBMP2Fits.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxCamCoords.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxCamCoords.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxCamera.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxCamera.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxCameraTypes.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxHistogram.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxHistogram.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxImageStore.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxImageStore.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxTimeFont.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxTimeFont.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxTimeFormatter.cpp">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxTimeFormatter.h">
+			<Option virtualFolder="wxCamera\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebCoords.cpp">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebCoords.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebSample.cpp">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebSample.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcam.cpp">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcam.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamTimer.cpp">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamTimer.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamTimerCB.h">
+			<Option virtualFolder="wxCamera\Webcam\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamV4L2.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamV4L2.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamWin32DS.cpp">
+			<Option virtualFolder="wxCamera\Webcam\WIN\" />
+			<Option target="W32_Debug" />
+			<Option target="W32_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\wxWebcamWin32DS.h">
+			<Option virtualFolder="wxCamera\Webcam\WIN\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxYP162Fits.cpp">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\wxYP162Fits.h">
+			<Option virtualFolder="wxCamera\Artemis\" />
+		</Unit>
+		<Unit filename="wxWebcam\yuv_to_rgb.cpp">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam\yuv_to_rgb.h">
+			<Option virtualFolder="wxCamera\Webcam\UX\" />
+			<Option target="UX_Debug" />
+			<Option target="UX_Release" />
+		</Unit>
+		<Unit filename="wxWebcam_icons.h">
+			<Option virtualFolder="wxGUI\" />
+		</Unit>
+		<Unit filename="wxcustom\wxIoPortCtrl.cpp" />
+		<Unit filename="wxcustom\wxIoPortCtrl.h" />
+		<Unit filename="wxcustom\wxPropGrid.cpp" />
+		<Unit filename="wxcustom\wxPropGrid.h" />
+		<Unit filename="wxcustom\wxPropertyPage.h" />
+		<Unit filename="wxcustom\wxPropertyPageDialog.cpp" />
+		<Unit filename="wxcustom\wxPropertyPageDialog.h" />
+		<Unit filename="wxcustom\wxStatusBarEx.cpp" />
+		<Unit filename="wxcustom\wxStatusBarEx.h" />
+		<Unit filename="wxsmith\ArtemisProps.wxs" />
+		<Unit filename="wxsmith\FitsHeader.wxs" />
+		<Unit filename="wxsmith\SettingsGuidePortParallel.wxs" />
+		<Unit filename="wxsmith\SettingsGuidePortSerial.wxs" />
+		<Unit filename="wxsmith\SettingsGuiding.wxs" />
+		<Unit filename="wxsmith\SettingsGuidingCalibrateDlg.wxs" />
+		<Unit filename="wxsmith\SettingsGuidingInterface.wxs" />
+		<Unit filename="wxsmith\defaultprops.wxs" />
+		<Unit filename="wxsmith\loadsaveprops.wxs" />
+		<Unit filename="wxsmith\primaryprops1.wxs" />
+		<Unit filename="wxsmith\secondaryprops1.wxs" />
+		<Unit filename="wxsmith\settingscontrolport.wxs" />
+		<Unit filename="wxsmith\settingsvideocapture.wxs" />
+		<Unit filename="wxsmith\wxwebcamdbframe.wxs" />
+		<Unit filename="wxthings\spinctld.cpp" />
+		<Unit filename="wxthings\spinctld.h" />
+		<Unit filename="wxthings\thingdef.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<wxsmith version="1">
+				<gui name="wxWidgets" src="wxWebcamDBApp.cpp" main="wxWebcamDBFrame" init_handlers="necessary" language="CPP" />
+				<resources>
+					<wxFrame wxs="wxsmith/wxwebcamdbframe.wxs" src="wxWebcamDBMain.cpp" hdr="wxWebcamDBMain.h" name="wxWebcamDBFrame" language="CPP" />
+					<wxPanel wxs="wxsmith/primaryprops1.wxs" src="PrimaryProps.cpp" hdr="PrimaryProps.h" name="PrimaryProps" language="CPP" />
+					<wxPanel wxs="wxsmith/secondaryprops1.wxs" src="SecondaryProps.cpp" hdr="SecondaryProps.h" name="SecondaryProps" language="CPP" />
+					<wxPanel wxs="wxsmith/defaultprops.wxs" src="DefaultProps.cpp" hdr="DefaultProps.h" name="DefaultProps" language="CPP" />
+					<wxPanel wxs="wxsmith/loadsaveprops.wxs" src="LoadSaveProps.cpp" hdr="LoadSaveProps.h" name="LoadSaveProps" language="CPP" />
+					<wxPanel wxs="wxsmith/settingsvideocapture.wxs" src="SettingsVideoCapture.cpp" hdr="SettingsVideoCapture.h" name="SettingsVideoCapture" language="CPP" />
+					<wxPanel wxs="wxsmith/settingscontrolport.wxs" src="SettingsControlPort.cpp" hdr="SettingsControlPort.h" name="SettingsControlPort" language="CPP" />
+					<wxPanel wxs="wxsmith/FitsHeader.wxs" src="FitsHeader.cpp" hdr="FitsHeader.h" name="FitsHeader" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuiding.wxs" src="SettingsGuiding.cpp" hdr="SettingsGuiding.h" name="SettingsGuiding" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidingInterface.wxs" src="SettingsGuidingInterface.cpp" hdr="SettingsGuidingInterface.h" name="SettingsGuidingInterface" language="CPP" />
+					<wxPanel wxs="wxsmith/ArtemisProps.wxs" src="ArtemisProps.cpp" hdr="ArtemisProps.h" name="ArtemisProps" language="CPP" />
+					<wxDialog wxs="wxsmith/SettingsGuidingCalibrateDlg.wxs" src="SettingsGuidingCalibrateDlg.cpp" hdr="SettingsGuidingCalibrateDlg.h" name="SettingsGuidingCalibrateDlg" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidePort.wxs" src="SettingsGuidePort.cpp" hdr="SettingsGuidePort.h" name="SettingsGuidePort" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidePortSerial.wxs" src="SettingsGuidePortSerial.cpp" hdr="SettingsGuidePortSerial.h" name="SettingsGuidePortSerial" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidePortParallel.wxs" src="SettingsGuidePortParallel.cpp" hdr="SettingsGuidePortParallel.h" name="SettingsGuidePortParallel" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidingInterfaceFile.wxs" src="SettingsGuidingInterfaceFile.cpp" hdr="SettingsGuidingInterfaceFile.h" name="SettingsGuidingInterfaceFile" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidingInterfacePort.wxs" src="SettingsGuidingInterfacePort.cpp" hdr="SettingsGuidingInterfacePort.h" name="SettingsGuidingInterfacePort" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsGuidingInterfaceBridge.wxs" src="SettingsGuidingInterfaceBridge.cpp" hdr="SettingsGuidingInterfaceBridge.h" name="SettingsGuidingInterfaceBridge" language="CPP" />
+					<wxDialog wxs="wxsmith/AdvancedGuidingParams.wxs" src="AdvancedGuidingParams.cpp" hdr="AdvancedGuidingParams.h" name="AdvancedGuidingParams" language="CPP" />
+					<wxPanel wxs="wxsmith/ArtemisCooling.wxs" src="ArtemisCooling.cpp" hdr="ArtemisCooling.h" name="ArtemisCooling" language="CPP" />
+					<wxPanel wxs="wxsmith/SettingsNamePolicy.wxs" src="SettingsNamePolicy.cpp" hdr="SettingsNamePolicy.h" fwddecl="1" name="SettingsNamePolicy" language="CPP" />
+					<wxDialog wxs="wxsmith/wxMessageArea.wxs" src="wxMessageArea.cpp" hdr="wxMessageArea.h" fwddecl="1" name="wxMessageArea" language="CPP" />
+					<wxPanel wxs="wxsmith/BatchExposure.wxs" src="BatchExposure.cpp" hdr="BatchExposure.h" fwddecl="1" name="BatchExposure" language="CPP" />
+					<wxPanel wxs="wxsmith/BatchSetup.wxs" src="BatchSetup.cpp" hdr="BatchSetup.h" fwddecl="1" name="BatchSetup" language="CPP" />
+					<wxDialog wxs="wxsmith/wxGuidingOptions.wxs" src="wxGuidingOptions.cpp" hdr="wxGuidingOptions.h" name="wxGuidingOptions" language="CPP" />
+					<wxPanel wxs="wxsmith/wxGuidingInterfaceFile.wxs" src="wxGuidingInterfaceFile.cpp" hdr="wxGuidingInterfaceFile.h" name="wxGuidingInterfaceFile" language="CPP" />
+					<wxPanel wxs="wxsmith/wxGuidingInterfaceBridge.wxs" src="wxGuidingInterfaceBridge.cpp" hdr="wxGuidingInterfaceBridge.h" name="wxGuidingInterfaceBridge" language="CPP" />
+					<wxPanel wxs="wxsmith/wxGuidingInterfaceSerialPort.wxs" src="wxGuidingInterfaceSerialPort.cpp" hdr="wxGuidingInterfaceSerialPort.h" name="wxGuidingInterfaceSerialPort" language="CPP" />
+					<wxPanel wxs="wxsmith/wxGuidingInterfaceParallelPort.wxs" src="wxGuidingInterfaceParallelPort.cpp" hdr="wxGuidingInterfaceParallelPort.h" name="wxGuidingInterfaceParallelPort" language="CPP" />
+					<wxPanel wxs="wxsmith/wxGuidingInterfaceUsbPort.wxs" src="wxGuidingInterfaceUsbPort.cpp" hdr="wxGuidingInterfaceUsbPort.h" name="wxGuidingInterfaceUsbPort" language="CPP" />
+				</resources>
+			</wxsmith>
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output chi="1" />
+				<doxyfile_dot class_diagrams="1" />
+				<general />
+			</DoxyBlocks>
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

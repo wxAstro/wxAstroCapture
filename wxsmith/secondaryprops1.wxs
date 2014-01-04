@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+    <object class="wxPanel" name="SecondaryProps">
+        <object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+            <cols>2</cols>
+            <object class="sizeritem">
+                <object class="wxFlexGridSizer" variable="FlexGridSizer2" member="no">
+                    <cols>2</cols>
+                    <object class="spacer">
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                        <size>5,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                        <size>5,5</size>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText1" member="no">
+                            <label>WB-R</label>
+                        </object>
+                        <flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxSlider" name="ID_SLIDER1" variable="m_wb_red_slider" member="yes">
+                            <value>50</value>
+                            <style>wxSL_LABELS</style>
+                            <size>120,40</size>
+                            <handler function="OnSliderScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+                            <handler function="OnSliderScrollThumbRelease" entry="EVT_COMMAND_SCROLL_THUMBRELEASE" />
+                            <handler function="OnWbRedScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+                        </object>
+                        <flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText2" member="no">
+                            <label>WB-B</label>
+                        </object>
+                        <flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxSlider" name="ID_SLIDER2" variable="m_wb_blue_slider" member="yes">
+                            <value>50</value>
+                            <style>wxSL_LABELS</style>
+                            <size>-1,40</size>
+                            <handler function="OnSliderScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+                            <handler function="OnSliderScrollThumbRelease" entry="EVT_COMMAND_SCROLL_THUMBRELEASE" />
+                            <handler function="OnWbBlueScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+                        </object>
+                        <flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <option>1</option>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                        <size>-1,5</size>
+                    </object>
+                    <object class="spacer">
+                        <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                        <size>-1,5</size>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="no">
+                            <label>Contr.</label>
+                        </object>
+                        <flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxSlider" name="ID_SLIDER3" variable="m_contrast_slider" member="yes">
+                            <style>wxSL_LABELS</style>
+                            <size>120,40</size>
+                            <handler function="OnSliderScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+                            <handler function="OnSliderScrollThumbRelease" entry="EVT_COMMAND_SCROLL_THUMBRELEASE" />
+                            <handler function="OnContrastScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+                        </object>
+                        <flag>wxALL|wxEXPAND|wxSHAPED|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="no">
+                            <label>Satur.</label>
+                        </object>
+                        <flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxSlider" name="ID_SLIDER4" variable="m_saturation_slider" member="yes">
+                            <value>50</value>
+                            <style>wxSL_LABELS</style>
+                            <size>120,40</size>
+                            <handler function="OnSliderScrollThumbTrack" entry="EVT_COMMAND_SCROLL_THUMBTRACK" />
+                            <handler function="OnSliderScrollThumbRelease" entry="EVT_COMMAND_SCROLL_THUMBRELEASE" />
+                            <handler function="OnSaturationScrollChanged" entry="EVT_COMMAND_SCROLL_CHANGED" />
+                        </object>
+                        <flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                </object>
+                <flag>wxALL|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+                <border>2</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxFlexGridSizer" variable="FlexGridSizer3" member="no">
+                    <cols>1</cols>
+                    <object class="sizeritem">
+                        <object class="wxRadioBox" name="ID_RADIOBOX1" variable="m_radiobox_wb" member="yes">
+                            <label>White bal.</label>
+                            <content>
+                                <item>Indoor</item>
+                                <item>Outdoor</item>
+                                <item>FL</item>
+                                <item>Freeze</item>
+                                <item>Auto</item>
+                            </content>
+                            <default>-1</default>
+                            <style>wxRA_SPECIFY_COLS</style>
+                            <handler function="OnRadioboxWbSelect" entry="EVT_RADIOBOX" />
+                        </object>
+                        <flag>wxBOTTOM|wxLEFT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                    <object class="sizeritem">
+                        <object class="wxStaticBoxSizer" variable="StaticBoxSizer1" member="no">
+                            <label>Modes</label>
+                            <orient>wxVERTICAL</orient>
+                            <object class="sizeritem">
+                                <object class="wxCheckBox" name="ID_CHECKBOX1" variable="m_checkbox_colour" member="yes">
+                                    <label>Colour</label>
+                                    <handler function="OnCheckboxColourClick" entry="EVT_CHECKBOX" />
+                                </object>
+                                <flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>5</border>
+                                <option>1</option>
+                            </object>
+                            <object class="sizeritem">
+                                <object class="wxCheckBox" name="ID_CHECKBOX2" variable="m_checkbox_flip_horiz" member="yes">
+                                    <label>Flip Horiz.</label>
+                                    <handler function="OnCheckboxFlipHorizClick" entry="EVT_CHECKBOX" />
+                                </object>
+                                <flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                                <border>5</border>
+                                <option>1</option>
+                            </object>
+                        </object>
+                        <flag>wxTOP|wxLEFT|wxEXPAND|wxALIGN_RIGHT|wxALIGN_BOTTOM</flag>
+                        <border>5</border>
+                        <option>1</option>
+                    </object>
+                </object>
+                <flag>wxALL|wxEXPAND|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+        </object>
+    </object>
+</wxsmith>

@@ -1,0 +1,59 @@
+
+
+Manual installation procedure for wxWidgets 2.8.7 in SUSE
+
+head for:
+
+http://www.wxwidgets.org/downloads/
+
+Current Stable Release: wxWidgets 2.8.7 Download
+
+grab  Source Archives item  -  wxGTK 
+
+you will get:  wxGTK-2.8.7.tar.gz
+choose rightclick - extract to here 
+
+open a shell
+go for the extracted directory (you will find 24 files and some folders 
+including readme-gtk.txt etc.)
+
+From that file I took:
+
+----Snipp----
+
+If you compile wxWidgets on Linux for the first time and don't like to read
+install instructions just do (in the base dir):
+
+> mkdir buildgtk
+> cd buildgtk
+> ../configure --with-gtk --disable-unicode
+> make
+> su <type root password>
+> make install
+> ldconfig
+[if you get "ldconfig: command not found", try using "/sbin/ldconfig"]
+
+If you want to remove wxWidgets on Unix you can do this:
+
+> su <type root password>
+> make uninstall
+> ldconfig
+
+----Snipp----
+
+../configure takes quite a while to run
+make does even longer (as long as it is compiling don't worry)
+
+The ../configure mail fail because you do not have a development environment installed.
+So it can complain about a missing c++ compiler or missing libraries of any kind incl. gtk2
+
+Go for YAST and grab the c++ development suite (about 250MB download)
+
+Run the ../configure  --with-gtk --disable-unicode  procedure again.
+
+or if you are experienced get a decent c++ compiler, then development libs for:
+ gtk2, libtiff, libpng, libjpg, expat - then again run the procedure.
+
+if all went well you may install the wxAstroCapture rpm package using YAST again
+
+---- o O o ---------

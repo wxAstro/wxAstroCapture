@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="wxWebcamDBFrame">
+		<title>wxAstroCapture - Windows linuX Astronomy Capture</title>
+		<bg>wxSYS_COLOUR_INACTIVEBORDER</bg>
+		<id_arg>0</id_arg>
+		<style>wxDEFAULT_FRAME_STYLE|wxMINIMIZE_BOX</style>
+		<handler function="OnClose" entry="EVT_CLOSE" />
+		<object class="wxBoxSizer" variable="BoxSizer1" member="yes">
+			<object class="sizeritem">
+				<object class="wxNotebook" name="ID_NOTEBOOK1" variable="Notebook1" member="yes">
+					<size>170,-1</size>
+					<style>wxNB_MULTILINE</style>
+					<handler function="OnNotebook1PageChanged" entry="EVT_NOTEBOOK_PAGE_CHANGED" />
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL1" variable="m_record_panel" member="yes">
+							<object class="wxFlexGridSizer" variable="FlexGridSizer1" member="no">
+								<cols>1</cols>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer1" member="yes">
+										<label>Video Device</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_DEVICE_PROPERTIES" variable="Button1" member="no">
+												<label>Properties ...</label>
+												<size>-1,-1</size>
+												<tooltip>Adjust camera gain, brightness etc.</tooltip>
+												<handler function="OnVideoDeviceProperties" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>3</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxCheckBox" name="ID_CHECKBOX5" variable="ShowReticle" member="no">
+												<label>Show Reticle</label>
+												<tooltip>Show crosshair reticle overlay</tooltip>
+												<handler function="OnShowReticleClick" entry="EVT_CHECKBOX" />
+											</object>
+											<flag>wxTOP|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>3</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="BoxSizer17" member="no">
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_CAPTURE" variable="m_capture_btn" member="yes">
+												<label>Capture</label>
+												<size>68,-1</size>
+												<tooltip>Press button to start/stop capture</tooltip>
+												<handler function="OnCaptureClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxGauge" name="ID_GAUGE1" variable="m_gauge1" member="yes">
+												<range>10</range>
+												<size>56,-1</size>
+												<tooltip>Activity indicates ongoing capture</tooltip>
+											</object>
+											<flag>wxTOP|wxLEFT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxTOP|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="BoxSizer16" member="no">
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BUTTON3" variable="m_pause_btn" member="yes">
+												<label>Pause</label>
+												<size>68,-1</size>
+												<enabled>0</enabled>
+												<tooltip>Press button to pause/resume capture</tooltip>
+												<handler function="OnPauseClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxTextCtrl" name="ID_TEXTCTRL1" variable="m_increment" member="yes">
+												<value>1</value>
+												<size>56,-1</size>
+												<tooltip>Frame number. Initial value to be &#x0A;used with next capture (FITS only).</tooltip>
+												<style>wxTE_RIGHT</style>
+												<handler function="OnIncrementText" entry="EVT_TEXT" />
+											</object>
+											<flag>wxTOP|wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="BoxSizer15" member="no">
+										<object class="spacer">
+											<flag>wxTOP|wxBOTTOM|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+											<border>5</border>
+											<size>5,-1</size>
+										</object>
+										<object class="sizeritem">
+											<object class="wxCheckBox" name="ID_CHECKBOX7" variable="MaxFrames_CheckBox" member="yes">
+												<label>Max#</label>
+												<size>60,-1</size>
+												<tooltip>Enable Max number of frames</tooltip>
+												<handler function="OnMaxFrames_CheckBoxClick" entry="EVT_CHECKBOX" />
+											</object>
+											<flag>wxTOP|wxBOTTOM|wxLEFT|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+											<border>5</border>
+										</object>
+										<object class="spacer">
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_TOP</flag>
+											<border>5</border>
+											<option>1</option>
+											<size>5,-1</size>
+										</object>
+										<object class="sizeritem">
+											<object class="wxSpinCtrl" name="ID_SPINCTRL4" variable="MaxFrames_SpinCtrl" member="yes">
+												<value>2000</value>
+												<min>1</min>
+												<max>10000</max>
+												<size>70,-1</size>
+												<enabled>0</enabled>
+												<tooltip>Max number of frames to capture</tooltip>
+											</object>
+											<flag>wxTOP|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+									</object>
+									<flag>wxBOTTOM|wxLEFT|wxEXPAND|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="spacer">
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<option>1</option>
+									<size>-1,5</size>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer2" member="no">
+										<label>Long exposures</label>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer12" member="no">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxCheckBox" name="ID_CHECKBOX1" variable="LE_CheckBox" member="yes">
+														<label>Long exposure</label>
+														<tooltip>Check to enable webcam long exposure</tooltip>
+														<handler function="OnLE_CheckBoxClick" entry="EVT_CHECKBOX" />
+													</object>
+													<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer14" member="no">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT1" variable="LE_Text" member="yes">
+																<label>[sec]</label>
+															</object>
+															<flag>wxBOTTOM|wxLEFT|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxSpinCtrl" name="ID_SPINCTRL1" subclass="wxSpinCtrlDbl" variable="LE_SpinCtrl1" member="yes">
+																<value></value>
+																<size>90,-1</size>
+																<tooltip>Length of long exposure in seconds</tooltip>
+																<handler function="OnLE_SpinCtrl1Change" entry="EVT_SPINCTRL" />
+															</object>
+															<flag>wxTOP|wxLEFT|wxEXPAND|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>4</border>
+														</object>
+													</object>
+													<flag>wxEXPAND|wxALIGN_LEFT|wxALIGN_BOTTOM</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+								<object class="spacer">
+									<flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<size>-1,5</size>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer3" member="no">
+										<label>Exposure Meter</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer4" member="no">
+												<object class="sizeritem">
+													<object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText1" member="yes">
+														<label>Channel</label>
+													</object>
+													<flag>wxLEFT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxChoice" name="ID_CHOICE1" variable="m_meter_channel" member="yes">
+														<content>
+															<item>L</item>
+															<item>R</item>
+															<item>G</item>
+															<item>B</item>
+														</content>
+														<size>50,-1</size>
+														<tooltip>Select colour channel for histogram</tooltip>
+														<handler function="OnMeterChannelSelect" entry="EVT_CHOICE" />
+													</object>
+													<flag>wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxTOP|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxPanel" name="ID_PANEL3" variable="m_exposure_meter_panel" member="yes">
+												<size>128,64</size>
+												<tooltip>Live histogram</tooltip>
+												<maxsize>128,64</maxsize>
+												<style>0</style>
+											</object>
+											<flag>wxTOP|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>3</border>
+											<option>2</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer3" member="no">
+												<object class="sizeritem">
+													<object class="wxCheckBox" name="ID_CHECKBOX2" variable="m_activate_exposure_meter" member="yes">
+														<label>Enable </label>
+														<tooltip>Check to enable live histogram</tooltip>
+														<handler function="OnActivateExposureMeterClick" entry="EVT_CHECKBOX" />
+													</object>
+													<flag>wxTOP|wxEXPAND|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+												<object class="sizeritem">
+													<object class="wxSpinCtrl" name="ID_SPINCTRL2" subclass="wxSpinCtrlDbl" variable="m_meter_scale" member="yes">
+														<value></value>
+														<size>40,-1</size>
+														<tooltip>Scale factor for histogram</tooltip>
+														<handler function="OnExposureMeteScaleChange" entry="EVT_SPINCTRL" />
+													</object>
+													<flag>wxTOP|wxLEFT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>4</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_TOP|wxALIGN_CENTER_HORIZONTAL</flag>
+									<border>5</border>
+									<option>1</option>
+								</object>
+							</object>
+						</object>
+						<label>Rec</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL4" variable="m_guide_panel" member="yes">
+							<object class="wxBoxSizer" variable="BoxSizer5" member="no">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer4" member="yes">
+										<label>Guide star tracking</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BUTTON1" variable="PickGuideStar" member="yes">
+												<label>Pick guide star</label>
+												<size>100,30</size>
+												<handler function="OnPickGuideStarClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxBOTTOM|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer6" member="yes">
+												<orient>wxVERTICAL</orient>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer7" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText2" member="no">
+																<label>Ra:</label>
+															</object>
+															<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT4" variable="m_guide_dx" member="yes">
+																<label>N/A</label>
+															</object>
+															<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>2</option>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>1</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer8" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText4" member="no">
+																<label>Dec:</label>
+															</object>
+															<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT6" variable="m_guide_dy" member="yes">
+																<label>N/A</label>
+															</object>
+															<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>2</option>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>1</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxBoxSizer" variable="BoxSizer10" member="yes">
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="no">
+																<label>Mag:</label>
+															</object>
+															<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>1</option>
+														</object>
+														<object class="sizeritem">
+															<object class="wxStaticText" name="ID_STATICTEXT8" variable="m_guide_mag" member="yes">
+																<label>N/A</label>
+															</object>
+															<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+															<border>5</border>
+															<option>2</option>
+														</object>
+													</object>
+													<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>1</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<option>1</option>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="spacer">
+									<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<size>-1,10</size>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer5" member="no">
+										<label>Guiding commands</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxCheckBox" name="ID_CHECKBOX3" variable="GuideTelescope" member="yes">
+												<label>Guide telescope</label>
+												<checked>1</checked>
+												<handler function="OnGuideTelescopeClick" entry="EVT_CHECKBOX" />
+											</object>
+											<flag>wxALL|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+											<border>3</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticBoxSizer" variable="StaticBoxSizer6" member="no">
+												<label>Reverse</label>
+												<object class="sizeritem">
+													<object class="wxCheckBox" name="ID_CHECKBOX4" variable="m_reverseRA" member="yes">
+														<label>RA</label>
+														<handler function="OnReverseRAClick" entry="EVT_CHECKBOX" />
+													</object>
+													<flag>wxTOP|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>2</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxCheckBox" name="ID_CHECKBOX6" variable="m_reverseDEC" member="yes">
+														<label>DEC</label>
+														<handler function="OnReverseDECClick" entry="EVT_CHECKBOX" />
+													</object>
+													<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>2</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>3</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxFlexGridSizer" variable="FlexGridSizer3" member="no">
+												<cols>3</cols>
+												<object class="sizeritem">
+													<object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText17" member="no">
+														<label>Dec</label>
+													</object>
+													<flag>wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxChoice" name="ID_CHOICE2" variable="m_decNSChoice" member="yes">
+														<content>
+															<item>None</item>
+															<item>N and S</item>
+															<item>N+ only</item>
+															<item>S- only</item>
+														</content>
+														<size>90,-1</size>
+														<handler function="OnDecNSChoiceSelect" entry="EVT_CHOICE" />
+													</object>
+													<flag>wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>3</border>
+													<option>1</option>
+												</object>
+											</object>
+											<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>3</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="spacer">
+									<flag>wxTOP|wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+									<size>-1,10</size>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer13" member="yes">
+										<label>Aggressiveness</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer13" member="no">
+												<object class="sizeritem">
+													<object class="wxStaticText" name="ID_STATICTEXT10" variable="m_staticText_RA" member="yes">
+														<label>RA (k)</label>
+													</object>
+													<flag>wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxSpinCtrl" name="ID_SPINCTRL3" subclass="wxSpinCtrlDbl" variable="m_RaAggrSpin" member="yes">
+														<value>1.0</value>
+														<size>70,-1</size>
+														<handler function="OnRaAggrSpinChange" entry="EVT_SPINCTRL" />
+													</object>
+													<flag>wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+											</object>
+											<flag>wxTOP|wxBOTTOM|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxBoxSizer" variable="BoxSizer25" member="no">
+												<object class="sizeritem">
+													<object class="wxStaticText" name="ID_STATICTEXT12" variable="StaticText19" member="no">
+														<label>DEC (k)</label>
+													</object>
+													<flag>wxLEFT|wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+													<option>1</option>
+												</object>
+												<object class="sizeritem">
+													<object class="wxSpinCtrl" name="ID_SPINCTRL5" subclass="wxSpinCtrlDbl" variable="m_DecAggrSpin" member="yes">
+														<value>1.0</value>
+														<size>70,-1</size>
+														<handler function="OnDecAggrSpinChange" entry="EVT_SPINCTRL" />
+													</object>
+													<flag>wxRIGHT|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+													<border>5</border>
+												</object>
+											</object>
+											<flag>wxTOP|wxBOTTOM|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+											<option>1</option>
+										</object>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BUTTON2" variable="Button5" member="no">
+												<label>Advanced...</label>
+												<handler function="OnAdvancedGuideParamsClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+							</object>
+						</object>
+						<label>Guide</label>
+					</object>
+					<object class="notebookpage">
+						<object class="wxPanel" name="ID_PANEL2" variable="m_batch_panel" member="yes">
+							<object class="wxBoxSizer" variable="BoxSizer9" member="no">
+								<orient>wxVERTICAL</orient>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer7" member="no">
+										<label>Batch Processing</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BATCH_CAPTURE_BTN" variable="m_batchCapture_btn" member="yes">
+												<label>Start Batch</label>
+												<size>-1,25</size>
+												<handler function="OnStartBatchButtonClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxButton" name="ID_BUTTON5" variable="PauseBatchButton" member="yes">
+												<label>Pause Batch</label>
+												<size>-1,25</size>
+												<enabled>0</enabled>
+												<handler function="OnPauseBatchButtonClick" entry="EVT_BUTTON" />
+											</object>
+											<flag>wxTOP|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="sizeritem">
+									<object class="wxStaticBoxSizer" variable="StaticBoxSizer8" member="no">
+										<label>Status</label>
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT13" variable="m_batch_status1" member="yes">
+												<label>Batch not running</label>
+											</object>
+											<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT11" variable="m_batch_status2" member="yes">
+												<label></label>
+											</object>
+											<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+										<object class="sizeritem">
+											<object class="wxStaticText" name="ID_STATICTEXT14" variable="m_batch_status3" member="yes">
+												<label></label>
+											</object>
+											<flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+								<object class="sizeritem">
+									<object class="wxBoxSizer" variable="BoxSizer11" member="no">
+										<orient>wxVERTICAL</orient>
+										<object class="sizeritem">
+											<object class="Custom" name="ID_CUSTOM1" subclass="BatchSetup" variable="m_batch_setup" member="yes">
+												<creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE));</creating_code>
+												<include_file>BatchSetup.h</include_file>
+												<local_include>1</local_include>
+												<style></style>
+											</object>
+											<flag>wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+											<border>5</border>
+										</object>
+									</object>
+									<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+									<border>5</border>
+								</object>
+							</object>
+						</object>
+						<label>Batch</label>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+			</object>
+			<object class="sizeritem">
+				<object class="wxBoxSizer" variable="BoxSizer2" member="yes">
+					<object class="sizeritem">
+						<object class="wxPanel" name="ID_CAMERA_PANEL" variable="video_panel" member="no">
+							<size>655,495</size>
+							<minsize>-1,-1</minsize>
+							<maxsize>-1,-1</maxsize>
+							<handler function="OnvideoPanelLeftDown" entry="EVT_LEFT_DOWN" />
+						</object>
+						<flag>wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+						<option>1</option>
+					</object>
+				</object>
+				<flag>wxALL|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+				<border>1</border>
+				<option>64</option>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="yes">
+			<object class="wxMenu" variable="Menu1" member="yes">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="yes">
+					<label>Exit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="yes">
+				<label>Camera</label>
+				<object class="wxMenuItem" name="ID_MENUITEM_CONNECT" variable="MenuItem2" member="yes">
+					<label>Connect</label>
+					<handler function="OnMenuItemConnect" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM_DISCONNECT" variable="MenuItem3" member="yes">
+					<label>Disconnect</label>
+					<handler function="OnMenuItemDisconnect" entry="EVT_MENU" />
+				</object>
+				<object class="separator" />
+			</object>
+			<object class="wxMenu" variable="Menu3" member="yes">
+				<label>Options</label>
+				<object class="wxMenuItem" name="ID_MENUITEM_SETTINGS" variable="MenuItem7" member="yes">
+					<label>Settings...</label>
+					<handler function="OnMenuItemSettings" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM_GUIDING2" variable="MenuItemGuiding" member="yes">
+					<label>Guiding...</label>
+					<handler function="OnMenuItemOptionsGuiding" entry="EVT_MENU" />
+				</object>
+				<object class="wxMenuItem" name="ID_MENUITEM_HEADER" variable="MenuItem9" member="yes">
+					<label>FITS Header...</label>
+					<handler function="OnMenuItemImageHeader" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu4" member="yes">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem8" member="yes">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" subclass="wxStatusBarEx" variable="m_statusbar" member="yes">
+			<fields>3</fields>
+			<widths>-30,-40,-50</widths>
+			<styles>wxSB_NORMAL,wxSB_NORMAL,wxSB_NORMAL</styles>
+		</object>
+		<object class="wxToolBar" name="ID_TOOLBAR1" subclass="wxMainToolBar" variable="ToolBar1" member="yes" />
+	</object>
+</wxsmith>

@@ -1,0 +1,1096 @@
+12:03:03.175	- INFO	u:\winux\proj\dscaplib\dscaplib\mytrace.h(100):
+		*** Log Started ***
+
+12:03:03.175	- INFO	u:\winux\proj\dscaplib\dscaplib\dscaplib.cpp(72):
+	 BEGIN OF TRACE
+
+12:03:03.175	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib.cpp(74):
+	 DScapLib() - BEGIN  (0x008FC0D8) 
+
+12:03:03.175	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(40):
+	 CDScapFilter() - BEGIN  (0x00FB2878) 
+
+12:03:03.175	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(39):
+	 CDScapFilterItem() (0x00FB2968) 
+
+12:03:03.175	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(109):
+	 CDScapFilter::EnumerateCapFilter() - BEGIN 
+
+12:03:03.253	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(129):
+	 ... enumerating device number #(1) 
+
+12:03:03.253	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(134):
+	 ... enumerating device (@device:pnp:\\?\usb#vid_046d&pid_09a2&mi_00#6&85a11f4&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(39):
+	 CDScapFilterItem() (0x00FB29F8) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(396):
+	 CDScapFilterItem::put_BaseFilter (AddRef 0x00388A2C, 3) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(232):
+	 EnumMediatypes() - BEGIN 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #1 
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (320 x 240) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB5E38) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB5E38) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 5) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 320x240 (RGB )) 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 0 as: Logitech QuickCam S7500 320x240 (RGB )
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #2 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (160 x 120) 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #3 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (176 x 144) 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #4 
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (352 x 288) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB6480) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB6480) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 6) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 352x288 (RGB )) 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 1 as: Logitech QuickCam S7500 352x288 (RGB )
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #5 
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (640 x 480) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB6A78) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB6A78) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 7) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 640x480 (RGB )) 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 2 as: Logitech QuickCam S7500 640x480 (RGB )
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #6 
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (960 x 720) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB7070) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB7070) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 8) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 960x720 (RGB )) 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 3 as: Logitech QuickCam S7500 960x720 (RGB )
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #7 
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (1280 x 960) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB7668) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB7668) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 9) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 1280x960 (RGB )) 
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 4 as: Logitech QuickCam S7500 1280x960 (RGB )
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #8 
+12:03:03.316	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (320 x 240) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB7C60) 
+
+12:03:03.316	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB7C60) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 10) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 320x240 (I420)) 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 5 as: Logitech QuickCam S7500 320x240 (I420)
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #9 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (160 x 120) 
+
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #10 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (176 x 144) 
+
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #11 
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (352 x 288) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB8258) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB8258) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 11) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 352x288 (I420)) 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 6 as: Logitech QuickCam S7500 352x288 (I420)
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #12 
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (640 x 480) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB8850) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB8850) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 12) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 640x480 (I420)) 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 7 as: Logitech QuickCam S7500 640x480 (I420)
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #13 
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (960 x 720) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB8E48) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB8E48) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 13) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 960x720 (I420)) 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 8 as: Logitech QuickCam S7500 960x720 (I420)
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #14 
+12:03:03.331	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (1280 x 960) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB29F8) (0x00FB9438) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB29F8) (0x00FB9438) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00388A2C, 14) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 1280x960 (I420)) 
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 9 as: Logitech QuickCam S7500 1280x960 (I420)
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(292):
+	 EnumMediatypes() - END 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 12) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(191):
+	 CDScapFilter::EnumerateCapFilter() - put BF (0x00388A2C, 10) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(213):
+	 CDScapFilter::EnumerateCapFilter() - END 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(51):
+	 CDScapFilter() - END 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(2123):
+	 CDSstream() - BEGIN  (0x00FB5970) 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(2137):
+	 CDSstream() - END 
+
+12:03:03.331	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib.cpp(80):
+	 DScapLib() - END 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(109):
+	 CDScapFilter::EnumerateCapFilter() - BEGIN 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 9) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 8) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 7) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 6) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 5) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 4) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 3) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 2) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 1) 
+
+12:03:05.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00388A2C, 0) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(129):
+	 ... enumerating device number #(1) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(134):
+	 ... enumerating device (@device:pnp:\\?\usb#vid_046d&pid_09a2&mi_00#6&85a11f4&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(39):
+	 CDScapFilterItem() (0x00FB9830) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(396):
+	 CDScapFilterItem::put_BaseFilter (AddRef 0x00387E7C, 3) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(232):
+	 EnumMediatypes() - BEGIN 
+
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #1 
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (320 x 240) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB9DE8) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB9DE8) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 5) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 320x240 (RGB )) 
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 0 as: Logitech QuickCam S7500 320x240 (RGB )
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #2 
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (160 x 120) 
+
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #3 
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (176 x 144) 
+
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #4 
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (352 x 288) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB5EB8) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB5EB8) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 6) 
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 352x288 (RGB )) 
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 1 as: Logitech QuickCam S7500 352x288 (RGB )
+
+12:03:05.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #5 
+12:03:05.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (640 x 480) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB64B0) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB64B0) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 7) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 640x480 (RGB )) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 2 as: Logitech QuickCam S7500 640x480 (RGB )
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #6 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (960 x 720) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB6AA8) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB6AA8) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 8) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 960x720 (RGB )) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 3 as: Logitech QuickCam S7500 960x720 (RGB )
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #7 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (1280 x 960) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB70A0) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB70A0) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 9) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 1280x960 (RGB )) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 4 as: Logitech QuickCam S7500 1280x960 (RGB )
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #8 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (320 x 240) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB7698) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB7698) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 10) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 320x240 (I420)) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 5 as: Logitech QuickCam S7500 320x240 (I420)
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #9 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (160 x 120) 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #10 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (176 x 144) 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #11 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (352 x 288) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB7C90) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB7C90) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 11) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 352x288 (I420)) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 6 as: Logitech QuickCam S7500 352x288 (I420)
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #12 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (640 x 480) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB8288) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB8288) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 12) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 640x480 (I420)) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 7 as: Logitech QuickCam S7500 640x480 (I420)
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #13 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (960 x 720) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB8880) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB8880) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 13) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 960x720 (I420)) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 8 as: Logitech QuickCam S7500 960x720 (I420)
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #14 
+12:03:05.925	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (1280 x 960) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9830) (0x00FB8E78) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9830) (0x00FB8E78) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 14) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 1280x960 (I420)) 
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 9 as: Logitech QuickCam S7500 1280x960 (I420)
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(292):
+	 EnumMediatypes() - END 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 12) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(191):
+	 CDScapFilter::EnumerateCapFilter() - put BF (0x00387E7C, 10) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(213):
+	 CDScapFilter::EnumerateCapFilter() - END 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(443):
+	 CaptureStream(disable) - BEGIN 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(942):
+	 Stop() - BEGIN 
+
+12:03:05.925	- ERROR	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(945):
+	 pMC==NULL ?? 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(63):
+	 ~CDSwcProp() (0x00FB29F8) 
+
+12:03:05.925	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:05.941	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(443):
+	 CaptureStream(disable) - BEGIN 
+
+12:03:05.941	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(942):
+	 Stop() - BEGIN 
+
+12:03:05.941	- ERROR	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(945):
+	 pMC==NULL ?? 
+
+12:03:05.941	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(63):
+	 ~CDSwcProp() (0x00FB29F8) 
+
+12:03:05.941	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:07.550	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(443):
+	 CaptureStream(disable) - BEGIN 
+
+12:03:07.550	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(942):
+	 Stop() - BEGIN 
+
+12:03:07.550	- ERROR	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(945):
+	 pMC==NULL ?? 
+
+12:03:07.550	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(63):
+	 ~CDSwcProp() (0x00FB29F8) 
+
+12:03:07.550	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:07.566	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(443):
+	 CaptureStream(disable) - BEGIN 
+
+12:03:07.566	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(942):
+	 Stop() - BEGIN 
+
+12:03:07.566	- ERROR	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(945):
+	 pMC==NULL ?? 
+
+12:03:07.566	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(63):
+	 ~CDSwcProp() (0x00FB29F8) 
+
+12:03:07.566	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:07.581	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(443):
+	 CaptureStream(disable) - BEGIN 
+
+12:03:07.581	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(942):
+	 Stop() - BEGIN 
+
+12:03:07.581	- ERROR	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(945):
+	 pMC==NULL ?? 
+
+12:03:07.581	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(63):
+	 ~CDSwcProp() (0x00FB29F8) 
+
+12:03:07.581	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(109):
+	 CDScapFilter::EnumerateCapFilter() - BEGIN 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 9) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 8) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 7) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 6) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 5) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 4) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 3) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 2) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 1) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 0) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(129):
+	 ... enumerating device number #(1) 
+
+12:03:07.894	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(134):
+	 ... enumerating device (@device:pnp:\\?\usb#vid_046d&pid_09a2&mi_00#6&85a11f4&0&0000#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\{bbefb6c7-2fc4-4139-bb8b-a58bba724083}) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(39):
+	 CDScapFilterItem() (0x00FB9270) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(396):
+	 CDScapFilterItem::put_BaseFilter (AddRef 0x00387E7C, 3) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(232):
+	 EnumMediatypes() - BEGIN 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #1 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (320 x 240) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB9828) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB9828) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 5) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 320x240 (RGB )) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 0 as: Logitech QuickCam S7500 320x240 (RGB )
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #2 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (160 x 120) 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #3 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (176 x 144) 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #4 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (352 x 288) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB9E70) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB9E70) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 6) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 352x288 (RGB )) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 1 as: Logitech QuickCam S7500 352x288 (RGB )
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #5 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (640 x 480) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB5EF0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB5EF0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 7) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 640x480 (RGB )) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 2 as: Logitech QuickCam S7500 640x480 (RGB )
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #6 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (960 x 720) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB64E8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB64E8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 960x720 (RGB )) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 3 as: Logitech QuickCam S7500 960x720 (RGB )
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #7 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (1280 x 960) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB6AE0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB6AE0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 9) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 1280x960 (RGB )) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 4 as: Logitech QuickCam S7500 1280x960 (RGB )
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #8 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (320 x 240) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB70D8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB70D8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 10) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 320x240 (I420)) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 5 as: Logitech QuickCam S7500 320x240 (I420)
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #9 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (160 x 120) 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #10 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(261):
+	 EnumMediatypes() .. - not SupportedFrameSize (176 x 144) 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #11 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (352 x 288) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB76D0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB76D0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 11) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 352x288 (I420)) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 6 as: Logitech QuickCam S7500 352x288 (I420)
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #12 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (640 x 480) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB7CC8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB7CC8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 12) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 640x480 (I420)) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 7 as: Logitech QuickCam S7500 640x480 (I420)
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #13 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (960 x 720) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB82C0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB82C0) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 13) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 960x720 (I420)) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 8 as: Logitech QuickCam S7500 960x720 (I420)
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(244):
+	 EnumMediatypes() .. item number #14 
+12:03:07.909	- INFO	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(256):
+	 EnumMediatypes() .. - trying to add a cam (1280 x 960) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(301):
+	 AddSupport() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB9270) (0x00FB88B8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB9270) (0x00FB88B8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 14) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(314):
+	 .. adding item: (Logitech QuickCam S7500 1280x960 (I420)) 
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(354):
+	 .. added item 9 as: Logitech QuickCam S7500 1280x960 (I420)
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(366):
+	 AddSupport() - END 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(292):
+	 EnumMediatypes() - END 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(70):
+	 CDScapFilterItem::Clear (Release 0x00387E7C, 12) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(191):
+	 CDScapFilter::EnumerateCapFilter() - put BF (0x00387E7C, 10) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscapfilterenum.cpp(213):
+	 CDScapFilter::EnumerateCapFilter() - END 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(63):
+	 ~CDSwcProp() (0x00FB29F8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dswcprop.cpp(52):
+	 CDSwcProp() (0x00FB29F8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(96):
+	 CDScapFilterItem(0x00FB5EF0) (0x01588FB8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(106):
+	 CDScapFilterItem::operator=(0x00FB5EF0) (0x01588FB8) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dscaplib_capfilteritem.cpp(169):
+	 CDScapFilterItem::operator= (AddRef 0x00387E7C, 11) 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(942):
+	 Stop() - BEGIN 
+
+12:03:07.909	- ERROR	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(945):
+	 pMC==NULL ?? 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(2143):
+	 ~CDSstream() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(1774):
+	 KillGraph() - BEGIN 
+
+12:03:07.909	- DEBUG	u:\winux\proj\dscaplib\dscaplib\dsstream.cpp(1783):
+	 KillGraph() - END 
+
+12:03:07.909	

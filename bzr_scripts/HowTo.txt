@@ -1,0 +1,69 @@
+HowTo setup the code::blocks (CB) and Bazaar (Bzr) tools:
+20070422/BM
+
+1) Install code::blocks from a nightly build  but NOT the old RC1
+  Win:
+    download and add mingwm10.dll into the CB install directory
+    download and add wxmsw26u_gcc_cb.dll into the CB install directory
+
+2) Get Bazaar and install it
+  Win: The PATH environment variable addition may take effect only after reboot
+  UX: use Adept and look for Bazaar
+
+3) Create a project main directory  e.g.  wxWebcamDB
+   
+4) Open a shell (UX)  or cmd (Win) and cd to that directory
+
+5) Run Bazaar for the first time - type into the shell
+   $>   bzr whoami  "username <mail@address>"   e.g. "bm <bm@doodle.com>"
+   check it by using 
+   $>   bzr whoami
+   should respond the typed name
+
+   --> this should also create your personal Bazaar config files here:
+
+Win: C:\Dokumente und Einstellungen\bm\Anwendungsdaten\bazaar\2.0  (in english it's ..\username\Application Data\
+UX:  ~/.bazaar   (~/ is the home dir and .something is a hidden dir use ls -a to find it)
+
+6)  Init the Project workspace and pull the project
+   $>   bzr init
+
+   then use    bzr pull LOCATION   (where LOCATION is ftp://ftpuser@ftpserver/  provide a password when asked for it)
+   $>   bzr pull ftp://wxWebcamDB%40burri-web.org@burri-web.org    
+	
+   --> now the project directory should be populated with the latest project files
+
+7) Run CB for the first time  - just double click it
+  
+   --> this should also create your personal CB config files here:
+
+Win: C:\Dokumente und Einstellungen\bm\Anwendungsdaten\codeblocks  (in english it's ..\username\Application Data\
+UX:  ~/.codeblocks   (~/ is the home dir and .something is a hidden dir use ls -a to find it)
+
+
+  --> Exit CB !!!
+
+
+8) Find the file CBtools_W32.conf  and CBtools_UX.conf in the bzr_scripts directory 
+
+
+9) Find the file  "default.conf"  in the CB user settings directory  see Pt.8 
+   now open this one and merge the content of the file CBtools_W32.conf  (CBtools_UX.conf) into the two sections 
+	<tools>  and   <gcv>   make sure not breaking the structure !!
+      change the path names in the <gcv> section  (global variables)
+
+   --> this should add the Bzr and some more tools and global vars used in the project
+
+
+10) Find the file default.bzr_script.cmd  and default.bzr_script.sh in the bzr_scripts directory 
+    copy them without the default.  part and and change the preferred VIEWER ONLY
+UX:  change the permission of bzr_script.sh  to Executable  (in Properties - second tab)	
+
+11) Open CB and there the project  e.g. "wxWebcamDB.cbp"  
+
+   --> Verify Menu   Settings-Global Variables
+   --> Verify Menu   Tools 
+
+   --> Run e.g. Tools - Bzr INFO    (your VIEWER program should pop up and display the Bazaar project info)
+
+

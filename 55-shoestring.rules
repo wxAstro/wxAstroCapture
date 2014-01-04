@@ -1,0 +1,22 @@
+# Udev rules file for Shoestring Astronomy products.
+# detects plug of a known product
+# allows group permission for the video group
+# creates a symlink /dev/hid_gpusb_n:m or /dev/hid_lxusb_n:m
+#
+# V1.1 - 20090409/BM
+#
+ACTION!="add", GOTO="shoestring_rules_end"
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", GOTO="shoestring_pid_test"
+SUBSYSTEM!="usb_device", GOTO="shoestring_rules_end"
+
+LABEL="shoestring_pid_test"
+
+# allow access permission via GROUP setting of those devices
+
+# Shoestring GPUSB - is an USB HID device we don't want to enumerate as input device
+SYSFS{idVendor}=="134a", SYSFS{idProduct}=="9020", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="hid_gpusb_$attr{busnum}:$attr{devnum}"
+
+# Shoestring LXUSB - is an USB HID device we don't want to enumerate as input device
+SYSFS{idVendor}=="134a", SYSFS{idProduct}=="9022", OWNER="root", GROUP="video", MODE="0660", SYMLINK+="hid_lxusb_$attr{busnum}:$attr{devnum}"
+
+LABEL="shoestring_rules_end"a

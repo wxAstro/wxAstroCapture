@@ -1,0 +1,108 @@
+20070706/BM
+
+Please note that there are some issues with the Philips Webcam Driver (PWC) on actual Linux distributions.
+This is related to the PWC driver version 10.0.12.
+
+Below whenever $> is shown it means that this is the prompt of a unix shell (command line)
+so $> dmesg      means to open a unix shell and type  dmesg after the prompt then hiting the enter key
+
+
+How to tell the PWC version? 
+$> dmesg | grep pwc
+
+... pwc: Philips webcam module version 10.0.12 is loaded
+... more lines
+
+Known issues:
+
+a) The Saturation slider does not work 
+   - the PWC driver has a flaw setting the saturation
+
+b) The Philips SPC900 camera is treated as PCVC720 type instead of PCVC740 (ToUCam Pro)
+   - the PWC driver assigned a wrong tag, the camera may behave not as expected 
+     we only know about LED issues which is not used by wxAstroCapture
+	 
+We expect that this will be addressed with an update of the PWC driver module in the future.
+
+If you need to get saturation work you may update the driver module yourselves.
+But please start it only if you have read the full text below and are sure what you have to do.
+
+
+I guess one has to have some kernel build items installed - 
+I don't know if they are loaded with the standard distribution but it would complain when doing the make later.
+
+How to do it - 
+
+Grab the latest driver snapshot from here (http://www.saillard.org/linux/pwc/snapshots/)
+ I got the one of the 4th July: pwc-v4l2-20070704-042701.tar.bz2
+ This one has the SPC900 type issue already solved
+
+OR
+
+Get our temporary source package  pwc-v4l2-20070704-042701A.tar.gz
+
+Extract to 'here' - i.e. right click and choose Extract - here
+you will find a folder with the same name but the extension - dive into this folder
+
+If you got ours you don't have to edit anything - just proceed to Make:
+
+Open pwc-ctrl.c  with a text editor e.g. with Kedit or so.
+
+Now find the following part  (~ line 626):
+
+/* @param value saturation color between [-100 , 100] */ 
+int pwc_set_saturation(struct pwc_device *pdev, int value) {
+	char buf;
+	int saturation_register;
+
+	if (pdev->type < 675)
+		return -EINVAL;
+	if (value < -100)
+		value = -100;
+	if (value > 100)
+		value = 100;
+	if (pdev->type < 730)
+		saturation_register = SATURATION_MODE_FORMATTER2;
+	else
+		saturation_register = SATURATION_MODE_FORMATTER1;
+	return SendControlMsg(SET_CHROM_CTL, saturation_register, 1); 
+}
+
+Add the line:  buf = (char)value;
+Before the return SendControlMsg(..) line
+
+this looks like the follwing:
+.
+..
+	if (pdev->type < 730)
+		saturation_register = SATURATION_MODE_FORMATTER2;
+	else
+		saturation_register = SATURATION_MODE_FORMATTER1;
+    buf = (char)value;
+	return SendControlMsg(SET_CHROM_CTL, saturation_register, 1); 
+}
+
+
+Now save and leave the file
+
+
+Make: 
+
+Get a Unix shell and type
+
+$> sudo make
+$> sudo make install     this takes a while
+$> sudo rmmod pwc        removes the driver
+$> sudo modprobe pwc     installs the new one
+
+Verify:
+
+$> dmesg       should show that pwc was removed and a new one was installed
+
+The snapshot does version 10.0.13
+Our package does version  10.0.13a
+
+Done
+
+
+   

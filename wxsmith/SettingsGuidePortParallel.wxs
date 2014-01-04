@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+    <object class="wxPanel" name="SettingsGuidePortParallel">
+        <object class="wxFlexGridSizer" variable="FlexGridSizer1" member="yes">
+            <cols>3</cols>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT1" variable="StaticText2" member="no">
+                    <label>Port pins</label>
+                </object>
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT7" variable="StaticText7" member="yes">
+                    <label>D7 D0</label>
+                    <style>wxALIGN_RIGHT</style>
+                    <size>105,-1</size>
+                </object>
+                <flag>wxALL|wxALIGN_RIGHT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>2</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+                <size>20,10</size>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT6" variable="StaticText6" member="no">
+                    <label>GX Mask</label>
+                    <style>wxALIGN_RIGHT</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>4</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="Custom" name="ID_CUSTOM3" subclass="wxIoPortCtrl" variable="GX_mask" member="yes">
+                    <creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+                    <style>wxEXPAND</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>3</border>
+                <option>1</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT3" variable="StaticText3" member="no">
+                    <label>GX Init</label>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>4</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="Custom" name="ID_CUSTOM4" subclass="wxIoPortCtrl" variable="GX_init" member="yes">
+                    <creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+                    <style>wxEXPAND</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>3</border>
+                <option>1</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT4" variable="StaticText4" member="no">
+                    <label>GX RA pos</label>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>4</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="Custom" name="ID_CUSTOM5" subclass="wxIoPortCtrl" variable="GX_RA_pos" member="yes">
+                    <creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+                    <style>wxEXPAND</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>3</border>
+                <option>1</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT2" variable="StaticText1" member="no">
+                    <label>GX RA neg</label>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>4</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="Custom" name="ID_CUSTOM6" subclass="wxIoPortCtrl" variable="GX_RA_neg" member="yes">
+                    <creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+                    <style>wxEXPAND</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>3</border>
+                <option>1</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT9" variable="StaticText9" member="no">
+                    <label>GX DEC pos</label>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>4</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="Custom" name="ID_CUSTOM7" subclass="wxIoPortCtrl" variable="GX_DEC_pos" member="yes">
+                    <creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+                    <style>wxEXPAND</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>3</border>
+                <option>1</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText5" member="no">
+                    <label>GX DEC neg</label>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_LEFT|wxALIGN_CENTER_VERTICAL</flag>
+                <border>4</border>
+                <option>1</option>
+            </object>
+            <object class="sizeritem">
+                <object class="Custom" name="ID_CUSTOM1" subclass="wxIoPortCtrl" variable="GX_DEC_neg" member="yes">
+                    <creating_code>$(THIS) = new $(CLASS)($(PARENT),$(ID),$(POS),$(SIZE),$(STYLE),$(NAME));</creating_code>
+                    <style>wxEXPAND</style>
+                </object>
+                <flag>wxBOTTOM|wxLEFT|wxRIGHT|wxEXPAND|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>3</border>
+                <option>1</option>
+            </object>
+            <object class="spacer">
+                <flag>wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL</flag>
+                <border>5</border>
+                <option>1</option>
+            </object>
+        </object>
+    </object>
+</wxsmith>
