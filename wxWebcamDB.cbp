@@ -212,7 +212,7 @@
 					<Add library="usb" />
 				</Linker>
 				<ExtraCommands>
-					<Add after="upx-nrv UX/bin/Release/wxAstroCapture" />
+					<Add after="upx UX/bin/Release/wxAstroCapture" />
 				</ExtraCommands>
 			</Target>
 		</Build>
