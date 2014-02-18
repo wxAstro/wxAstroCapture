@@ -9,11 +9,19 @@ Original home page: http://arnholm.org/astro/software/wxAstroCapture/
 
 wxAstroCapture was originally developed by Martin Burri and Carsten Arnholm,
 who initially made it available free of charge, then in January 2014 released
-it under as open source (see licence details below) to become a community
-maintained project.
+it as open source (see licence details below) to become a community
+maintained project on GitHub: https://github.com/wxAstro/wxAstroCapture
 
 The software runs on Windows XP/Vista, Linux Kubuntu/Ubuntu 8.04->10.04, Linux
 SuSE 10.2 and more. Max OS X is not currently supported.
+
+Current Release
+===============
+
+The current release is still the *beta* wxAstroCapture 1.8-1 from 23 Oct 2010,
+before the move to GitHub, under the old free but not open licence. This is
+available from Carsten Arnholm's page:
+http://arnholm.org/astro/software/wxAstroCapture/
 
 Yahoo! Group
 ============
